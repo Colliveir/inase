@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER - MENU */
+header {
+    background-color: #F2F2F2;
+    display: block;
+    text-align: center !important;
+    padding: 0px;
+    width: 100%;
+}
+
+.btnpre:hover {
+    opacity: 0.5;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 0 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#menuDesktop {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+    min-width: 200px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    display: none;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    text-decoration: none;
+    margin: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #eeeeee !important;
+}
+
+
+/* END HEADER - MENU */
+
+/* Geral */
+
+textarea {
+    max-height: 300px;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Rotaciona o ícone quando o dropdown estiver aberto */
+[aria-expanded="true"] .rotate-icon {
+    transform: rotate(180deg);
+}
+
+.lispace li {
+    margin: 2rem 0;
+}
+
+/* login background */
+#bgimg {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* borda dotted section */
+.partner-section {
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.partner-section img {
+    max-width: 40%;
+}
+
+.partner-button {
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.partner-button:hover {
+    opacity: 0.6;
+}
+
+.login-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.custom-border {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* END Geral */
+
+/* FOOTER */
+footer {
+    padding: 50px 100px;
+    background-color: #F2F2F2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+/* END FOOTER */
+
+/* INDEX.HTML (PÁGINA INICIAL) */
+#header-pagIni a:hover {
+    color: #FF4704;
+}
+
+.colorindex {
+    color: #FF4704;
+}
+
+.pagIni_sec3 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.pagIni_sec3 img:hover {
+    transform: scale(1.05);
+}
+
+#footer-pagIni a:hover {
+    color: #FF4704;
+}
+
+/* END INDEX.HTML (PÁGINA INICIAL) */
+
+/* DPI.HTML (DIAGNÓSTICO POR IMAGEM) */
+
+#header-pagdpi a:hover {
+    color: #8D1AD4;
+}
+
+.colordpi {
+    color: #8D1AD4;
+}
+
+.dpirow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-pagdpi a:hover {
+    color: #8D1AD4;
+}
+
+/* END DPI.HTML (DIAGNÓSTICO POR IMAGEM) */
+
+/* TELEMED.HTML (TELEMEDICINA) */
+
+#header-pagtelemed a:hover {
+    color: #FF4704;
+}
+
+.colortelemed {
+    color: #FF4704;
+}
+
+.benefit-box {
+    border: 2px dashed;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-orange {
+    border-color: #FF5733;
+}
+
+.border-purple {
+    border-color: #8A2BE2;
+}
+
+.benefit-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#footer-pagtelemed a:hover {
+    color: #FF4704;
+}
+
+/* END TELEMED.HTML (TELEMEDICINA) */
+
+/* GERVID.HTML (GERANDO VIDAS) */
+
+#header-paggervid a:hover {
+    color: #7D0281;
+}
+
+.colorgervid {
+    color: #7D0281;
+}
+
+#footer-paggervid a:hover {
+    color: #7D0281;
+}
+
+/* END GERVID.HTML (VIDAS) */
+
+/* LABORATÓRIO */
+
+.colorlab {
+    color: #c10472;
+}
+
+#header-paglab a:hover {
+    color: #c10472;
+}
+
+.labrow a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-paglab a:hover {
+    color: #c10472;
+}
+
+/* END LABORATÓRIO */
+
+/* ODONTOLOGIA */
+#header-pagodont a:hover {
+    color: #0b5b83;
+}
+
+.colorodont {
+    color: #0b5b83;
+}
+
+#footer-pagodont a:hover {
+    color: #0b5b83;
+}
+
+/* END ODONTOLOGIA */
