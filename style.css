@@ -145,6 +145,10 @@ textarea {
     background-color: #fff;
 }
 
+.text-shadow {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
 /* END Geral */
 
 /* FOOTER */
@@ -179,7 +183,7 @@ footer a {
     transform: scale(1.05);
 }
 
-.pagIni_sec4{
+.pagIni_sec4 {
     background-image: url(images/carretas_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
