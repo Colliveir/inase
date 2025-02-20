@@ -21,9 +21,9 @@ header {
 header a {
     text-decoration: none;
     color: #000;
-    font-size: 15px;
-    margin: 0 15px;
-    transition: 0.5s;
+    font-size: 15px !important;
+    margin: 0 10px;
+    transition: 0.7s !important;
     cursor: pointer;
 }
 
@@ -72,7 +72,6 @@ header a {
 .dropdown-item:hover {
     background-color: #eeeeee !important;
 }
-
 
 /* END HEADER - MENU */
 
@@ -150,16 +149,15 @@ textarea {
 
 /* FOOTER */
 footer {
-    padding: 50px 100px;
     background-color: #F2F2F2;
 }
 
 footer a {
     text-decoration: none;
     color: #000;
-    font-size: 15px;
+    font-size: 14px;
     margin: 10px 0;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 /* END FOOTER */
@@ -173,12 +171,18 @@ footer a {
     color: #FF4704;
 }
 
-.pagIni_sec3 img {
+.pagIni_imghover img {
     transition: transform 0.3s ease-in-out;
 }
 
-.pagIni_sec3 img:hover {
+.pagIni_imghover img:hover {
     transform: scale(1.05);
+}
+
+.pagIni_sec4{
+    background-image: url(images/carretas_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #footer-pagIni a:hover {
