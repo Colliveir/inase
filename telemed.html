@@ -18,8 +18,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -29,8 +28,9 @@
     <!-- HEADER -->
     <header id="header-pagtelemed" class="px-5 py-3">
         <div class="container">
-            <div class="d-flex justify-content-end px-5">
-                <ul class="list-unstyled d-flex mt-2" style="margin: 0;">
+            <!-- Botões no Desktop -->
+            <div class="d-none d-lg-flex justify-content-end px-5">
+                <ul class="list-unstyled d-flex mt-2" style="margin: 0 3%;">
                     <li class="nav-item me-3"><a class="nav-link" href="carreira.html">Carreira</a></li>
                     <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
                 </ul>
@@ -48,156 +48,168 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Menu principal -->
+                <!-- Menu principal (Offcanvas) -->
                 <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasMenu"
                     aria-labelledby="offcanvasMenuLabel" style="background-color: #F2F2F2;">
-                    <ul class="navbar-nav offcanvas-body ps-3">
-                        <li class="nav-item"><a class="nav-link btn btnpre py-2"
-                                style="border:2px solid #FF4704; background-color: #FF4704; color: #fff;"
-                                href="#">Paciente</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link btn p-2" href="#"
-                                style="border:2px solid #FF4704;">Empresa</a></li>
-                        <li class="nav-item dropdown">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Por dentro do Inase
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
-                                <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
-                                <li><a class="dropdown-item py-2" href="gervid.html">IGV</a></li>
-                            </ul>
-                        </li>
 
-                        <div class="dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
-                            <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Nossos Negócios
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="saudepubli.html">Saúde
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="dpi.html">Diagnóstico por Imagem &nbsp
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="dpi_itinerante.html ">Projetos
-                                                Itinerante</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="lab.html">Laboratório
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
-                                                Itinerante</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="odontologia.html">Odontologia
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
-                                                Itinerante</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item py-2" href="telemed.HTML">Telemedicina</a></li>
-                                <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
-                                        Social</a>
-                                </li>
-                                <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
-                            </ul>
-                        </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Transparência
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
-                                        Humanos
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
-                                                RH</a>
-                                        </li>
-                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Compras & Contratações
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
-                                                de Compras e Contratações</a></li>
-                                        <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
-                                                Convocatórios</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Regulamentos
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
-                                                href="compliance.html">
-                                                Compliance
-                                                <i class="bi bi-arrow-right colortelemed"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
-                                                        Denúncia</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
-                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
-                                        href="convenios_&_contratos.html">
-                                        Convênios e Contratos de Gestão &nbsp
-                                        <i class="bi bi-arrow-right colortelemed"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="login_prestcontas.html"
-                                                target="_blank">Prestação de
-                                                Contas</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-5 rounded btnpre" href="login_telemed.html" target="_blank"
-                                style="background-color: #FF4704; color:#fff;"> Conecte-se </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav d-lg-none">
+                            <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
+                            <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
+                        </ul>
+
+                        <ul class="navbar-nav ps-3">
+                            <li class="nav-item my-2"><a class="nav-link btn btnpre py-2"
+                                    style="border:2px solid #FF4704; background-color: #FF4704; color: #fff;"
+                                    href="#">Paciente</a>
+                            </li>
+                            <li class="nav-item my-2"><a class="nav-link btn p-2" href="#"
+                                    style="border:2px solid #FF4704;">Empresa</a></li>
+                            <li class="nav-item my-2"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle my-2" id="nav1" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Por dentro do Inase
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
+                                    <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                    <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
+                                </ul>
+                            </li>
+
+                            <div class="dropdown my-2" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                                <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Nossos Negócios
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="saudepubli.html">Saúde
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="dpi.html">Diagnóstico por Imagem &nbsp
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="dpi_itinerante.html ">Projetos
+                                                    Itinerante</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="lab.html">Laboratório
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
+                                                    Itinerante</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="odontologia.html">Odontologia
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
+                                                    Itinerante</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="telemed.HTML">Telemedicina</a></li>
+                                    <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
+                                            Social</a>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
+                                </ul>
+                            </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle my-2" id="nav1" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Transparência
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
+                                            Humanos
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                                    RH</a>
+                                            </li>
+                                            <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                            Compras & Contratações
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2"
+                                                    href="compras_&_contratacoes.html">Regulamento
+                                                    de Compras e Contratações</a></li>
+                                            <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                                    Convocatórios</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                            Regulamentos
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                                    href="compliance.html">
+                                                    Compliance
+                                                    <i class="bi bi-arrow-right colortelemed"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
+                                                            Denúncia</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                            <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                            href="convenios_&_contratos.html">
+                                            Convênios e Contratos de Gestão &nbsp
+                                            <i class="bi bi-arrow-right colortelemed"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="login_prestcontas.html"
+                                                    target="_blank">Prestação de
+                                                    Contas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-5 rounded btnpre my-2" href="login_telemed.html" target="_blank"
+                                    style="background-color: #FF4704; color:#fff;"> Conecte-se </a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </div>
     </header>
@@ -222,25 +234,31 @@
         <!-- End Vídeo -->
 
         <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid" src="images/TELEMEDICINA_01.png" alt="inase">
+            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_01.png" alt="inase"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
         <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid" src="images/TELEMEDICINA_05.png" alt="inase">
+            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_05.png" alt="inase"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
+
 
         <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid" src="images/TELEMEDICINA_02.png" alt="inase">
+            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_02.png" alt="inase"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
+
 
         <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid" src="images/TELEMEDICINA_03.png" alt="inase">
+            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_03.png" alt="inase"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
-        <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid" src="images/TELEMEDICINA_04.png" alt="inase">
+        <section class="py-4 teste">
+            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_04.png" alt="inase"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
-
     </section>
 
     <a href="#" id="topButton">
@@ -300,6 +318,23 @@
     </footer>
     <!-- End Footer -->
     <script>
+        // efeito slide banners
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-slide");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add("active");
+                        observer.unobserve(img);
+                    }
+                });
+            }, { threshold: 0.2 });
+            images.forEach(img => observer.observe(img));
+        });
+        // topbutton
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
