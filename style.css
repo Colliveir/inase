@@ -340,7 +340,7 @@ footer a {
     font-weight: bold;
 }
 
-#doar-pagseguro .submit{
+#doar-pagseguro .submit {
     background-color: #7D0281;
 }
 
@@ -353,6 +353,13 @@ footer a {
 }
 
 /* END IGV.HTML (VIDAS) */
+
+/* DOACOES.HTML */
+.pagsegurobox {
+    margin-top: 10%;
+}
+
+/* END DOACOES.HTML */
 
 /* LABORATÓRIO */
 
@@ -391,8 +398,7 @@ footer a {
 /* END ODONTOLOGIA */
 
 @media (max-width: 768px) {
-
-teste img{
-    width: 10000000px;
-}
+    .pagsegurobox {
+        margin-top: 20%;
+    }
 }
