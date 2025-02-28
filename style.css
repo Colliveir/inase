@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: open sans, sans-serif;
 }
 
 /* HEADER - MENU */
@@ -137,6 +137,21 @@ textarea {
 .justify {
     text-align: justify;
 }
+
+/* efeito slide banners */
+
+.img-slide {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.img-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* end efeito slide banners */
 
 /* BUTTON PAGE UP */
 
@@ -292,21 +307,48 @@ footer a {
 
 /* END TELEMED.HTML (TELEMEDICINA) */
 
-/* GERVID.HTML (GERANDO VIDAS) */
+/* IGV.HTML (GERANDO VIDAS) */
 
-#header-paggervid a:hover {
+#header-pagigv a:hover {
     color: #7D0281;
 }
 
-.colorgervid {
+#doar-pagseguro .logo img {
+    width: 70%;
+}
+
+#doar-pagseguro .amounts .option {
+    color: #000;
+}
+
+#doar-pagseguro .frequency button {
+    color: #000;
+}
+
+#doar-pagseguro .active {
+    background-color: #FF4704;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+#doar-pagseguro a {
+    color: #FF4704;
+    font-weight: bold;
+}
+
+#doar-pagseguro .submit{
+    background-color: #FF4704;
+}
+
+.colorigv {
     color: #7D0281;
 }
 
-#footer-paggervid a:hover {
+#footer-pagigv a:hover {
     color: #7D0281;
 }
 
-/* END GERVID.HTML (VIDAS) */
+/* END IGV.HTML (VIDAS) */
 
 /* LABORATÓRIO */
 
@@ -343,3 +385,10 @@ footer a {
 }
 
 /* END ODONTOLOGIA */
+
+@media (max-width: 768px) {
+
+teste img{
+    width: 10000000px;
+}
+}
