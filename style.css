@@ -313,6 +313,10 @@ footer a {
     color: #7D0281;
 }
 
+.mainForm {
+    margin: 0 !important;
+}
+
 #doar-pagseguro .logo img {
     width: 70%;
 }
@@ -326,18 +330,18 @@ footer a {
 }
 
 #doar-pagseguro .active {
-    background-color: #FF4704;
+    background-color: #7D0281;
     color: #fff !important;
     font-weight: bold;
 }
 
 #doar-pagseguro a {
-    color: #FF4704;
+    color: #7D0281;
     font-weight: bold;
 }
 
 #doar-pagseguro .submit{
-    background-color: #FF4704;
+    background-color: #7D0281;
 }
 
 .colorigv {
