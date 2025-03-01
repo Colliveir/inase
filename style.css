@@ -94,6 +94,16 @@ textarea {
     margin: 2rem 0;
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-height: 600px;
+}
+
 /* login background */
 #bgimg {
     background-size: cover;
@@ -138,15 +148,31 @@ textarea {
     text-align: justify;
 }
 
+.min-height {
+    min-height: 600px;
+}
+
 /* efeito slide banners */
 
-.img-slide {
+/* left */
+.img-slide-left {
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.img-slide.active {
+.img-slide-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* right */
+.img-slide-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.img-slide-right.active {
     opacity: 1;
     transform: translateX(0);
 }
