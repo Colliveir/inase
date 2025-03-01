@@ -249,9 +249,9 @@
             comunidades, inspirando outros a seguirem o mesmo caminho. Esse é apenas um exemplo de como o esporte pode
             ser uma ferramenta poderosa para transformar vidas e comunidades.</p><br>
 
-        <section class="text-center py-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/QR_GERANDO VIDAS.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+        <section class="text-center my-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/QR_GERANDO VIDAS.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
         <h1 class="colorigv"><b>Seja um semeador</b></h1>
@@ -279,8 +279,8 @@
             mudanças positivas ao seu redor.
         </p>
 
-        <section class="text-center py-4 dpirow">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/IGV_02.png" alt="inase"
+        <section class="text-center my-4 dpirow">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-right" data-src="images/IGV_02.png" alt="inase"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="><br>
 
             <button class="partner-button" style="background-color: #7D0281;"><a href="doacoes.html" target="_blank">Doe
@@ -346,9 +346,9 @@
     <!-- End Footer -->
 
     <script>
-        // efeito slide banners
+        // Efeito slide banners
         document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll(".img-slide");
+            const images = document.querySelectorAll(".img-slide-left, .img-slide-right");
 
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
@@ -360,6 +360,7 @@
                     }
                 });
             }, { threshold: 0.2 });
+
             images.forEach(img => observer.observe(img));
         });
         // topbutton

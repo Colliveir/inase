@@ -192,8 +192,7 @@
     <!-- END HEADER -->
 
     <!-- Carrossel -->
-    <div id="carouselExample" class="container py-4 carousel slide d-block w-100 mx-auto img-fluid"
-        data-bs-ride="carousel">
+    <div id="carouselExample" class="container carousel slide d-block w-100 mx-auto img-fluid mt-4" data-bs-ride="carousel">
         <!-- Imagens -->
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -216,44 +215,13 @@
     </div>
     <!-- End Carrossel -->
 
-    <section class="container d-flex justify-content-center align-items-center py-5">
-        <div class="row custom-border p-4" style="border: 2px dotted #a97c50;">
-            <!-- Coluna da esquerda -->
-            <div class="col-lg-4 text-center mb-3 mb-lg-0">
-                <img src="images/25y.png" alt="25anosimage">
-            </div>
-
-            <!-- Coluna da direita -->
-            <div class="col-lg-8">
-                <h3 class="mb-3" style="color: #a97c50;">
-                    Celebrando 25 anos de Transformação e Impacto Social
-                </h3>
-                <p>
-                    Hoje celebramos um marco significativo: o 25º aniversário do Inase Brasil. Ao longo de um quarto
-                    de século, nossa missão tem sido clara e apaixonada: melhorar a qualidade de vida das pessoas
-                    através do esporte, saúde, assistência social e de nossos serviços especializados.
-                </p>
-                <p>
-                    Na área da saúde, nosso compromisso é oferecer cuidados acessíveis e de qualidade. Nossos
-                    serviços de laboratório, diagnóstico por imagem e odontologia são reconhecidos pela excelência e
-                    dedicação. Cada diagnóstico preciso, cada sorriso restaurado e cada exame realizado são
-                    testemunhas do nosso esforço incansável em prol do bem-estar.
-                </p>
-                <p>
-                    Hoje, ao olhar para trás, vemos uma jornada repleta de desafios superados e conquistas
-                    celebradas. Cada voluntário, parceiro e beneficiário faz parte dessa história de sucesso. Somos
-                    gratos a todos que acreditaram e contribuíram para tornar nossa visão uma realidade.
-                </p>
-                <p>
-                    Parabéns a todos nós por esses 25 anos de dedicação, amor e compromisso. Que venham muitos mais
-                    anos de impacto e realizações!
-                </p>
-            </div>
-        </div>
+    <section class="container mt-4">
+        <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/PAGINA_INICIAL_25y.png" alt="inase"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
     </section>
 
-    <section class="container py-5 pagIni_imghover pagIni_sec3 rounded">
-        <div class="row g-4 d-flex justify-content-center text-center">
+    <section class="container pagIni_imghover pagIni_sec3 rounded mt-4 p-5 d-flex align-items-center min-height">
+        <div class="row g-4 d-flex justify-content-center text-center w-100">
             <div class="col-12 col-md-4 d-flex justify-content-center">
                 <a href="onde_estamos.html"><img src="images/PAGINA_INICIAL_03.png" class="rounded img-fluid"></a>
             </div>
@@ -266,16 +234,16 @@
         </div>
     </section>
 
-    <section class="container p-5 my-4 pagIni_imghover pagIni_sec4 rounded">
-        <div class="row g-4 d-flex justify-content-center text-center m-5">
+    <section class="container pagIni_imghover pagIni_sec4 rounded my-4 p-5 min-height d-flex align-items-center">
+        <div class="row g-4 d-flex justify-content-center text-center w-100">
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="lab_itinerante.html"><img src="images/PAGINA_INICIAL_06.png" class="img-fluid"></a>
+                <a href="onde_estamos.html"><img src="images/PAGINA_INICIAL_07.png" class="rounded img-fluid"></a>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="dpi_itinerante.html"><img src="images/PAGINA_INICIAL_07.png" class="img-fluid"></a>
+                <a href="carreira.html"><img src="images/PAGINA_INICIAL_08.png" class="rounded img-fluid"></a>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center">
-                <a href="odontologia_itinerante.html"><img src="images/PAGINA_INICIAL_08.png" class="img-fluid"></a>
+                <a href="faleconosco.html"><img src="images/PAGINA_INICIAL_06.png" class="rounded img-fluid"></a>
             </div>
         </div>
     </section>
@@ -287,7 +255,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 mt-auto bg-light" id="footer-pagIni">
+    <footer class="py-5 bg-light" id="footer-pagIni">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -337,6 +305,23 @@
     <!-- End Footer -->
 
     <script>
+        // efeito slide banners
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-slide-left");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add("active");
+                        observer.unobserve(img);
+                    }
+                });
+            }, { threshold: 0.2 });
+            images.forEach(img => observer.observe(img));
+        });
+        // topbutton
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
