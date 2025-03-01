@@ -223,7 +223,7 @@
         </ul>
 
         <!-- Vídeo -->
-        <div class="text-center">
+        <div class="mt-4">
             <section class="video">
                 <video autoplay loop muted playsinline class="mx-auto img-fluid">
                     <source src="videos/TELEMEDICINA.mp4" type="video/mp4">
@@ -233,31 +233,31 @@
         </div>
         <!-- End Vídeo -->
 
-        <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_01.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+        <section class="mt-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/TELEMEDICINA_01.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
-        <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_05.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
-        </section>
-
-
-        <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_02.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+        <section class="mt-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-right" data-src="images/TELEMEDICINA_05.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
 
-        <section class="py-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_03.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+        <section class="mt-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/TELEMEDICINA_02.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
-        <section class="py-4 teste">
-            <img class="d-block w-100 mx-auto img-fluid img-slide" data-src="images/TELEMEDICINA_04.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+
+        <section class="mt-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-right" data-src="images/TELEMEDICINA_03.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+        </section>
+
+        <section class="mt-4">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/TELEMEDICINA_04.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
     </section>
 
@@ -269,7 +269,7 @@
 
 
     <!-- Footer -->
-    <footer class="py-5 mt-auto bg-light" id="footer-pagtelemed">
+    <footer class="py-5 bg-light" id="footer-pagtelemed">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -318,9 +318,9 @@
     </footer>
     <!-- End Footer -->
     <script>
-        // efeito slide banners
+        // Efeito slide banners
         document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll(".img-slide");
+            const images = document.querySelectorAll(".img-slide-left, .img-slide-right");
 
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
@@ -332,8 +332,10 @@
                     }
                 });
             }, { threshold: 0.2 });
+
             images.forEach(img => observer.observe(img));
         });
+
         // topbutton
         const topButton = document.getElementById("topButton");
 
