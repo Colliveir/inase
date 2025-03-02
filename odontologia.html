@@ -67,6 +67,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -209,29 +210,27 @@
         </ul>
 
         <!-- Vídeo -->
-        <div class="mt-4">
             <section class="video">
-                <video autoplay loop muted playsinline style="width: 100%; transform: scaleY(0.8);">
+                <video autoplay loop muted playsinline style="width: 100%; transform: scaleY(0.8); object-fit: cover;">
                     <source src="videos/ODONTOLOGIA.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo.
                 </video>
             </section>
-        </div>
         <!-- End Vídeo -->
 
         <section class="mt-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/odontologia_2.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/odontologia_2.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
         <section class="mt-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-right" data-src="images/odontologia_3.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-right rounded" data-src="images/odontologia_3.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
         <section class="mt-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/odontologia_4.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/odontologia_4.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
     </section>
 
@@ -242,7 +241,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagodont">
+   <footer class="py-5" id="footer-pagodont">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -313,7 +312,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
