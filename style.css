@@ -449,6 +449,10 @@ footer a {
 
 @media(max-width: 768px) {
 
+    footer img{
+        width: 180px;
+    }
+
     /* IGV.HTML (GERANDO VIDAS) */
 
     .title-IGV {
