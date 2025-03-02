@@ -53,6 +53,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -199,8 +200,8 @@
         </ul>
 
         <section class="text-center">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/LOCALIZAÇÃO_INASE.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/LOCALIZAÇÃO_INASE.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
         <section class="py-4">
@@ -214,6 +215,17 @@
                 target="_blank">
                 R. Cap. Cassiano Ricardo de Toledo, 191 - Sala 1215 - Chácara Urbana, Jundiaí - SP, 13.201-840, Brasil.
             </a>
+
+            <div class="mt-4">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229.22748792330685!2d-46.89329279571824!3d-23.18334278045557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2688ab6108b5%3A0x7844367bc8c24e95!2sR.%20Cap.%20Cassiano%20Ricardo%20de%20Toledo%2C%20191%20-%20Ch%C3%A1cara%20Urbana%2C%20Jundia%C3%AD%20-%20SP%2C%2013201-840!5e0!3m2!1spt-BR!2sbr!4v1740943870828!5m2!1spt-BR!2sbr"
+                        style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+
             <p class="my-4">Caso queira entrar em contato com Inase Brasil, utilize o canal <a
                     href="faleconosco.html">Fale
                     Conosco</a>.</p>
@@ -227,7 +239,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagIni">
+    <footer class="py-5" id="footer-pagIni">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -297,7 +309,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
