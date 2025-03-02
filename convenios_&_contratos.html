@@ -53,6 +53,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -196,8 +197,7 @@
         <ul class="breadcrumb">
             <li><a href="index.html">Página inicial</a></li>
             <li><a>Convênios e Contratos</a></li>
-        </ul>
-
+        </ul classList>
         <h1 class="colorindex"><b>Convênios e Contratos de Gestão</b></h1>
         <p>Convênios e contratos de gestão são instrumentos importantes na administração pública e em parcerias
             entre organizações sociais sem fins lucrativos.</p>
@@ -210,7 +210,7 @@
             executivas. Esses contratos visam melhorar a eficiência e a qualidade dos serviços públicos,
             estabelecendo metas e indicadores de desempenho.</p></br>
         <h5 class="colorindex"><b>Características dos contratos de gestão:</b></h5>
-        <ul>
+        <ul class="lispace">
             <li><b>Metas e Indicadores:</b> Estabelecem metas, objetivos e indicadores de desempenho que a
                 organização deve
                 atingir. </li>
@@ -254,7 +254,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagIni">
+   <footer class="py-5" id="footer-pagIni">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -307,7 +307,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";

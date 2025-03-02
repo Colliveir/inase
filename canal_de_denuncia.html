@@ -53,6 +53,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -200,7 +201,8 @@
         </ul>
 
         <section class="mt-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/canal_de_denuncia_1.png" alt="inase"
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded"
+                data-src="images/canal_de_denuncia_1.png" alt="inase"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
@@ -214,7 +216,7 @@
                 de transparência e integridade.
             </p>
 
-            <ol>
+            <ul class="lispace">
                 <li><b>Acesso: </b>O canal de Denúncia do Inase Brasil pode ser acessado por e-mail, ou fazendo seu
                     relato
                     clicando em “Realizar Relato”.</li>
@@ -228,15 +230,22 @@
                 <li><b>Investigação: </b>Após o recebimento de uma denúncia, o Inase Brasil realizará uma investigação
                     para
                     verificar a veracidade das informações e tomar as devidas providências.</li>
-            </ol>
+            </ul>
             <p>Esse canal é importante para garantir a conformidade com leis e regulamentações, além de proteger os
                 direitos
                 dos colaboradores e stakeholders.
             </p>
             <p>Se precisar de mais informações ou tiver uma situação específica, estou aqui para ajudar!</p>
             <br>
-            <a class="partner-button" href="#" style="background-color: #FF4704;">Realizar Relato</a>
-            <a class="partner-button" href="#" style="background-color: gray;">Acompanhar Relato</a>
+
+            <a class="partner-button" href="#"
+                style="background-color: #FF4704; width: 200px; display: inline-block; text-align: center; padding: 10px 0; color: white; text-decoration: none;">
+                Realizar Relato
+            </a>
+            <a class="partner-button" href="#"
+                style="background-color: #7d7d7d; width: 200px; display: inline-block; text-align: center; padding: 10px 0; color: white; text-decoration: none;">
+                Acompanhar Relato
+            </a>
         </section>
     </section>
 
@@ -247,7 +256,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagIni">
+   <footer class="py-5" id="footer-pagIni">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -317,7 +326,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
