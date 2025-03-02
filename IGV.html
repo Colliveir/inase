@@ -53,6 +53,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -222,7 +223,7 @@
         </p>
 
         <h3 class="colorigv">Metodologia:</h3>
-        <ul>
+        <ul class="lispace">
             <li><b>Treinamento e Competição:</b> Os jovens participam de treinos regulares e
                 competições internas, promovendo disciplina, trabalho em equipe e auto-estima.</li>
             <li><b>Oficinas Educativas:</b> Paralelamente às atividades esportivas, são
@@ -234,7 +235,7 @@
         </ul>
 
         <h3 class="colorigv">Impacto Esperado:</h3>
-        <ul>
+        <ul class="lispace">
             <li><b>Desenvolvimento Físico e Mental:</b> Melhoria na condição física e bem-estar
                 mental dos participantes.</li>
             <li><b>Redução da Violência e Criminalidade:</b> Através da ocupação dos jovens com
@@ -250,7 +251,7 @@
             ser uma ferramenta poderosa para transformar vidas e comunidades.</p><br>
 
         <section class="text-center my-4">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/QR_GERANDO VIDAS.png"
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/QR_GERANDO VIDAS.png"
                 alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
@@ -259,7 +260,7 @@
             aplicada a várias áreas da vida.
         </p>
         <h3 class="colorigv">Ser um semeador significa:</h3>
-        <ul>
+        <ul class="lispace">
             <li><b>Iniciativa e Proatividade:</b> Um semeador é alguém que toma a iniciativa de plantar ideias, valores
                 e ações positivas, sabendo que o impacto virá com o tempo.</li>
             <li><b>Paciência e Perseverança:</b> Assim como no cultivo de plantas, um semeador entende que os resultados
@@ -280,12 +281,21 @@
         </p>
 
         <section class="text-center my-4 dpirow">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-right" data-src="images/IGV_02.png" alt="inase"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="><br>
+            <img class="d-block w-100 mx-auto img-fluid img-slide-right rounded" data-src="images/IGV_02.png"
+                alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="><br>
 
             <button class="partner-button" style="background-color: #7D0281;"><a href="doacoes.html" target="_blank">Doe
                     Agora <i class="bi bi-arrow-right"></i></a></button>
         </section>
+
+        <!-- arquivo pdf -->
+        <div class="pdf">
+            <a href="documents/POLITICA_IGV.pdf" target="_blank" style="color: #000;" class="text-center">
+                <img src="images/capa_POLITICA_IGV.png" alt="inase" width="200px"><br>
+                M. Voluntariados</a>
+        </div>
+        <!-- end arquivo pdf -->
+
     </section>
 
     <a href="#" id="topButton">
@@ -296,7 +306,7 @@
 
 
     <!-- Footer -->
-    <footer class="py-5 mt-auto bg-light" id="footer-pagigv">
+    <footer class="py-5" id="footer-pagigv">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -367,7 +377,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
