@@ -90,8 +90,16 @@ textarea {
     transform: rotate(180deg);
 }
 
+.lispace {
+    padding: 0 !important;
+}
+
 .lispace li {
-    margin: 2rem 0;
+    margin: 1rem 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 .video {
@@ -148,10 +156,6 @@ textarea {
     text-align: justify;
 }
 
-.min-height {
-    min-height: 600px;
-}
-
 /* efeito slide banners */
 
 /* left */
@@ -165,6 +169,7 @@ textarea {
     opacity: 1;
     transform: translateX(0);
 }
+
 /* right */
 .img-slide-right {
     opacity: 0;
@@ -284,6 +289,10 @@ footer a {
     margin: 0 auto;
 }
 
+.pagIni_sec3 img {
+    width: 70%;
+}
+
 .pagIni_sec4 {
     background-image: url(images/carretas_bg.png);
     background-repeat: no-repeat;
@@ -292,6 +301,10 @@ footer a {
 
 #footer-pagIni a:hover {
     color: #FF4704;
+}
+
+.min-height {
+    min-height: 600px;
 }
 
 /* END INDEX.HTML (PÁGINA INICIAL) */
@@ -339,12 +352,38 @@ footer a {
     color: #7D0281;
 }
 
+.colorigv {
+    color: #7D0281;
+}
+
+
+.title-IGV {
+    font-size: 50px;
+}
+
+#footer-pagigv a:hover {
+    color: #7D0281;
+}
+
+/* END IGV.HTML (VIDAS) */
+
+/* DOACOES.HTML */
+.pagsegurobox {
+    margin-top: 5%;
+}
+
 .mainForm {
     margin: 0 !important;
+    width: 400px !important;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #doar-pagseguro .logo img {
-    width: 70%;
+    width: 100%;
 }
 
 #doar-pagseguro .amounts .option {
@@ -368,21 +407,6 @@ footer a {
 
 #doar-pagseguro .submit {
     background-color: #7D0281;
-}
-
-.colorigv {
-    color: #7D0281;
-}
-
-#footer-pagigv a:hover {
-    color: #7D0281;
-}
-
-/* END IGV.HTML (VIDAS) */
-
-/* DOACOES.HTML */
-.pagsegurobox {
-    margin-top: 10%;
 }
 
 /* END DOACOES.HTML */
@@ -423,8 +447,14 @@ footer a {
 
 /* END ODONTOLOGIA */
 
-@media (max-width: 768px) {
-    .pagsegurobox {
-        margin-top: 20%;
+@media(max-width: 768px) {
+
+    /* IGV.HTML (GERANDO VIDAS) */
+
+    .title-IGV {
+        font-size: 30px;
     }
+
+    /* END IGV.HTML (VIDAS) */
+
 }

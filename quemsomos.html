@@ -54,6 +54,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -199,11 +200,11 @@
             <li><a>Quem Somos</a></li>
         </ul>
 
-        <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/QUEM SOMOS_INASE.png" alt="inase"
+        <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/QUEM SOMOS_INASE.png" alt="inase"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="> 
     </section>
     <section class="container py-4 justify">
-        <h2 class="colorindex"><b>Somos o Inase Brasil</b></h2>
+        <h2 class="colorindex"><b>Somos o Inase Brasil</b></h2><br>
         <p>Uma organização social sem fins lucrativos dedicada a promover o bem-estar e a qualidade de vida da
             população. Nossa missão é atuar em conjunto com governos, comunidades e parceiros para fornecer serviços
             essenciais que contribuam para o desenvolvimento social e humano.</p>
@@ -213,20 +214,20 @@
             atendam às necessidades mais urgentes da sociedade. Nossa abordagem é baseada em princípios de
             transparência, eficiência e responsabilidade, garantindo que cada recurso seja utilizado de forma eficaz
             para gerar o maior impacto possível.</p>
-        <h5 class="colorindex"><b>Nossa Missão</b></h5>
+        <h5 class="colorindex"><b>Nossa Missão</b></h5><br>
         <p>Nossa missão é transformar vidas através de ações concretas e sustentáveis, promovendo a inclusão social,
             o acesso à saúde, educação e assistência social. Acreditamos que a colaboração entre setor público,
             privado e sociedade civil é fundamental para construir um futuro mais justo e igualitário.
         </p>
         <h5 class="colorindex"><b>Nossos Valores</b></h5>
-        <ul>
+        <ul class="lispace" style="padding: 0;">
             <li><b>Compromisso:</b> Trabalhamos com dedicação e empenho para cumprir nossa missão.</li>
             <li><b>Transparência:</b> Mantemos nossos processos claros e acessíveis a todos.</li>
             <li><b>Eficiência:</b> Buscamos sempre a melhor utilização dos recursos disponíveis.</li>
             <li><b>Inclusão:</b> Valorizamos a diversidade e a participação de todos nos nossos projetos.</li>
             <li><b>Parceria:</b> Acreditamos na força da cooperação para alcançar nossos objetivos.</li>
         </ul>
-        <h5 class="colorindex"><b>O que fazemos</b></h5>
+        <h5 class="colorindex"><b>O que fazemos</b></h5><br>    
         <p>
             <b>Programas de Saúde:</b> Oferecemos serviços de saúde preventiva e curativa, garantindo acesso à
             assistência
@@ -257,7 +258,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagIni">
+   <footer class="py-5" id="footer-pagIni">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -327,7 +328,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
