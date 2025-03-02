@@ -67,6 +67,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
                         </li>
@@ -212,7 +213,7 @@
         </ul>
 
         <section class="text-center">
-            <img class="d-block w-100 mx-auto img-fluid img-slide-left" data-src="images/DIAGNOSTICO POR IMAGEM_07.png"
+            <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/DIAGNOSTICO POR IMAGEM_07.png"
                 alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
         </section>
 
@@ -263,7 +264,7 @@
     </a>
 
     <!-- Footer -->
-    <footer class="py-5 bg-light" id="footer-pagdpi">
+   <footer class="py-5" id="footer-pagdpi">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
                 <div class="col">
@@ -333,7 +334,7 @@
         const topButton = document.getElementById("topButton");
 
         window.onscroll = function () {
-            if (document.documentElement.scrollTop > 200) { // Exibe após rolar 200px
+            if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
