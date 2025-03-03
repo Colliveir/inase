@@ -231,13 +231,13 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
-                                    <li><a class="dropdown-item py-2" href="lab_itinerante.html">Laboratório -
+                                    <li><a class="dropdown-item py-2" href="lab_itinerante.html">Laboratório
                                             Itinirante</a>
                                     </li>
                                     <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Diagnóstico por
-                                            - Imagem - Itinirante</a>
+                                            Imagem Itinirante</a>
                                     </li>
-                                    <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Odontologia -
+                                    <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Odontologia
                                             Itinirante</a>
                                     </li>
                                 </ul>
@@ -483,21 +483,37 @@
                     let menu = parent.querySelector(".dropdown-menu");
 
                     if (menu.classList.contains("show")) {
+                        // Se já estiver aberto, fecha
                         menu.classList.remove("show");
                         this.setAttribute("aria-expanded", "false");
                     } else {
+                        // Fecha outros dropdowns antes de abrir o atual
                         document.querySelectorAll(".offcanvas .dropdown-menu.show").forEach(function (openMenu) {
                             openMenu.classList.remove("show");
                             openMenu.previousElementSibling.setAttribute("aria-expanded", "false");
                         });
 
+                        // Abre o novo dropdown
                         menu.classList.add("show");
                         this.setAttribute("aria-expanded", "true");
                     }
-                    event.preventDefault();
+
+                    event.preventDefault(); // Impede a navegação automática ao clicar
+                    event.stopPropagation(); // Evita que cliques dentro do menu fechem o dropdown
+                });
+            });
+
+            // Fecha o dropdown se clicar fora dele
+            document.addEventListener("click", function (event) {
+                document.querySelectorAll(".offcanvas .dropdown-menu.show").forEach(function (openMenu) {
+                    if (!openMenu.contains(event.target)) {
+                        openMenu.classList.remove("show");
+                        openMenu.previousElementSibling.setAttribute("aria-expanded", "false");
+                    }
                 });
             });
         });
+
 
         // efeito slide banners
         document.addEventListener("DOMContentLoaded", function () {
@@ -515,7 +531,6 @@
             }, { threshold: 0.2 });
             images.forEach(img => observer.observe(img));
         });
-
         // topbutton
         const topButton = document.getElementById("topButton");
 
