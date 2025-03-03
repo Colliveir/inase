@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPI - Paciente</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- HEADER -->
+    <header id="header-pagdpi" class="px-5 py-3">
+        <div class="container">
+            <div class="d-flex justify-content-end px-5">
+                <ul class="list-unstyled d-flex mt-2" style="margin: 0 3%;">
+                    <li class="nav-item me-3"><a class="nav-link" href="carreira.html">Carreira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
+                </ul>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="dpi.html">
+                    <img src="images/logo_DPI.png" alt="logo" width="150px">
+                </a>
+
+                <!-- Botão do menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu principal -->
+                <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasMenu"
+                    aria-labelledby="offcanvasMenuLabel" style="background-color: #F2F2F2;">
+                    <ul class="navbar-nav offcanvas-body ps-3">
+                        <li class="nav-item"><a class="nav-link btn btnpre py-2"
+                                style="border:2px solid #8A2BE2; background-color: #8A2BE2; color: #fff;"
+                                href="dpi_paciente.html">Paciente</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn p-2" href="dpi_empresa.html"
+                                style="border:2px solid #8A2BE2;">Empresa</a></li>
+                        <li class="nav-item dropdown">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Por dentro do Inase
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
+                                <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
+                                <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                            <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Nossos Negócios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="saudepubli.html">Saúde
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="dpi.html">Diagnóstico por Imagem &nbsp
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dpi_itinerante.html ">Projetos
+                                                Itinerante</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="lab.html">Laboratório
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
+                                                Itinerante</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="odontologia.html">Odontologia
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
+                                                Itinerante</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="telemed.html">Telemedicina</a></li>
+                                <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
+                                        Social</a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
+                            </ul>
+                        </div>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Transparência
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
+                                        Humanos
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                                RH</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Compras & Contratações
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
+                                                de Compras e Contratações</a></li>
+                                        <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                                Convocatórios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Regulamentos
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                                href="compliance.html">
+                                                Compliance
+                                                <i class="bi bi-arrow-right colordpi"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
+                                                        Denúncia</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                        href="convenios_&_contratos.html">
+                                        Convênios e Contratos de Gestão &nbsp
+                                        <i class="bi bi-arrow-right colordpi"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="login_prestcontas.html"
+                                                target="_blank">Prestação de
+                                                Contas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 rounded btnpre" href="login_dpi.html"
+                                style="background-color: #8A2BE2; color:#fff;">Resultados de Exames</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <section class="container py-4 justify">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="dpi.html">Diagnóstico por Imagem</a></li>
+            <li><a>Paciente</a></li>
+        </ul>
+
+        <h2 class="colordpi"><b>Paciente</b></h2>
+        <p>Colocar você paciente em primeiro lugar não é apenas uma frase, é o cerne de tudo o que fazemos. Sabemos que,
+            por trás de cada exame, há uma história, uma jornada de saúde que merece ser compreendida e tratada com
+            empatia. Sabemos que um exame pode ser estressante, e estamos aqui para tornar esse momento o mais tranquilo
+            possível, e estamos sempre prontos para ouvir, orientar e oferecer apoio durante todo o processo</p>
+
+        <h2 class="colordpi"><b>Conheça nossos exames</b></h2>
+
+        <p>Veja os preparos para os exames e saiba como se preparar antes de realizar cada tipo de exame!</p>
+
+        <p class="colordpi"><b>É importante seguir à risca para ter o melhor resultado.</b></p>
+
+        <!-- Botão do dropdown 1 -->
+        <div class="border rounded p-3 d-flex justify-content-between align-items-center my-2" data-bs-toggle="collapse"
+            data-bs-target="#conteudoDropdown1" role="button" aria-expanded="false" aria-controls="conteudoDropdown1">
+            <strong>Ressonância Magnética</strong>
+            <span class="bi bi-chevron-down rotate-icon"></span> <!-- Ícone com rotação -->
+        </div>
+        <div class="collapse mt-2" id="conteudoDropdown1">
+            <div class="card card-body">
+                <p>A ressonância magnética (RM) é um método de diagnóstico por imagem que utiliza ondas de
+                    radiofrequência em um forte campo magnético para obter informações detalhadas dos órgãos e tecidos
+                    internos do corpo, sem a utilização de radiação ionizante.
+                </p>
+                <p>O método apresenta grande potencial diagnóstico, sem ser invasivo ou utilizar radiação ionizante, com
+                    grandes benefícios aos pacientes por fornecer informações precisas e detalhadas em qualquer plano
+                    anatômico com grande contraste e resolução espacial.
+                </p>
+                <p>Para a realização do exame, o paciente precisa permanecer imóvel dentro do aparelho durante o
+                    procedimento que pode demorar em média de 15 a 30 minutos, dependendo de qual exame for realizado.
+                    Eventualmente pode ser necessária a utilização de um meio de contraste a base de gadolínio via
+                    intravenosa, para a melhor identificação de algumas estruturas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão do dropdown 2 -->
+        <div class="border rounded p-3 d-flex justify-content-between align-items-center my-2" data-bs-toggle="collapse"
+            data-bs-target="#conteudoDropdown2" role="button" aria-expanded="false" aria-controls="conteudoDropdown2">
+            <strong>Tomografia Computadorizada</strong>
+            <span class="bi bi-chevron-down rotate-icon"></span> <!-- Ícone com rotação -->
+        </div>
+        <div class="collapse mt-2" id="conteudoDropdown2">
+            <div class="card card-body">
+                <p>A Tomografia Computadorizada é um exame complementar de diagnóstico por imagem, que consiste de
+                    múltiplas imagens detalhadas que representam secções ou “fatias” do corpo, que podem ser
+                    reformatadas em múltiplos planos e que podem ainda gerar imagens tridimensionais. É obtida através
+                    do processamento por computador de informação recolhida após expor o corpo a uma sucessão de raios
+                    X.
+                </p>
+                <p>O exame é não invasivo e costuma ser muito rápido e o paciente precisa permanecer imóvel no aparelho
+                    durante o procedimento. Eventualmente, pode ser necessária a utilização de um meio de contraste a
+                    base de iodo via intravenosa, para a melhor identificação de algumas estruturas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão do dropdown 3 -->
+        <div class="border rounded p-3 d-flex justify-content-between align-items-center my-2" data-bs-toggle="collapse"
+            data-bs-target="#conteudoDropdown3" role="button" aria-expanded="false" aria-controls="conteudoDropdown3">
+            <strong>Ultrassonografia</strong>
+            <span class="bi bi-chevron-down rotate-icon"></span> <!-- Ícone com rotação -->
+        </div>
+        <div class="collapse mt-2" id="conteudoDropdown3">
+            <div class="card card-body">
+                <p>O ultrassom é um método de diagnóstico por imagem que utiliza ondas sonoras de alta frequência para a
+                    formação de imagens das estruturas internas do corpo. Apresenta alta demanda atualmente por ser
+                    efetivo, possuir ótima relação custo-benefício e ser seguro (não há radiação ionizante). Além disso,
+                    permite a formação de imagens em tempo real, possibilitando maior interação entre o médico
+                    especialista e o paciente.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão do dropdown 4 -->
+        <div class="border rounded p-3 d-flex justify-content-between align-items-center my-2" data-bs-toggle="collapse"
+            data-bs-target="#conteudoDropdown4" role="button" aria-expanded="false" aria-controls="conteudoDropdown4">
+            <strong>Mamografia</strong>
+            <span class="bi bi-chevron-down rotate-icon"></span> <!-- Ícone com rotação -->
+        </div>
+        <div class="collapse mt-2" id="conteudoDropdown4">
+            <div class="card card-body">
+                <p>Mamografia é uma imagem radiográfica da mama produzida através de um equipamento denominado
+                    mamógrafo, que utiliza raio-x em baixas doses. Seu objetivo principal é detectar possível câncer
+                    inicial, mesmo quando não palpável, possibilitando seu tratamento precoce.
+                </p>
+                <strong>A mamografia pode ser dividida em dois grandes grupos de ação: </strong>
+                <p><strong>Mamografia de Rotina ou Rastreamento:</strong> é realizada em pacientes que não relatam
+                    queixas ou sintomas que podem ou não significar câncer;
+                </p>
+                <p><strong>Mamografia Diagnóstica: </strong>é realizada quando há suspeita da existência de algum tipo
+                    de lesão palpável e que requer um estudo direcionado à queixa.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão do dropdown 5 -->
+        <div class="border rounded p-3 d-flex justify-content-between align-items-center my-2" data-bs-toggle="collapse"
+            data-bs-target="#conteudoDropdown5" role="button" aria-expanded="false" aria-controls="conteudoDropdown5">
+            <strong>Densitometria Óssea</strong>
+            <span class="bi bi-chevron-down rotate-icon"></span> <!-- Ícone com rotação -->
+        </div>
+        <div class="collapse mt-2" id="conteudoDropdown5">
+            <div class="card card-body">
+                <p>A densitometria tem por objetivo estudar a densidade mineral óssea para verificar se há ou não
+                    osteopenia/osteoporose. É realizado em aparelho de dupla emissão de raio-x, com baixa dosagem de
+                    radiação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" id="topButton">
+        <button>
+            <i class="bi bi-chevron-up"></i>
+        </button>
+    </a>
+
+    <!-- Footer -->
+   <footer class="py-5" id="footer-pagdpi">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
+                <div class="col">
+                    <a href="dpi.html">
+                        <img src="images/logo_DPI.png" class="img-fluid" width="250px" alt="Logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <h6><b>Mais em Página Inicial</b></h6>
+                    <a href="quemsomos.html" class="d-block">Por dentro do Inase</a>
+                    <a href="saudepubli.html" class="d-block">Nossos Negócios</a>
+                    <a href="regulamento_rh.html" class="d-block">Transparência</a>
+                </div>
+                <div class="col">
+                    <h6><b>Mais Sobre o Inase</b></h6>
+                    <a href="carreira.html" class="d-block">Carreira</a>
+                    <a href="imprensa.html" class="d-block">Imprensa</a>
+                    <a href="faleconosco.html" class="d-block">Fale Conosco</a>
+                </div>
+                <div class="col">
+                    <h6><b>Conecte-se com Inase</b></h6>
+                    <a href="https://www.instagram.com/inasebrasil/" target="_blank" class="d-block">
+                        <i class="bi bi-instagram fs-5"></i> Instagram
+                    </a>
+                    <a href="http://www.facebook.com/inasebrasil" target="_blank" class="d-block">
+                        <i class="bi bi-facebook fs-5"></i> Facebook
+                    </a>
+                    <a href="https://www.linkedin.com/company/inasebrasil/" target="_blank" class="d-block">
+                        <i class="bi bi-linkedin fs-5"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
+                <div>
+                    <a href="acessibilidade.html" class="mx-2">Acessibilidade</a>
+                    <a href="termos_e_condicoes.html" class="mx-2">Termos e Condições</a>
+                    <a href="politica_privacidade.html" class="mx-2">Políticas de Privacidade</a>
+                    <a href="politica_cookies.html" class="mx-2">Política de Cookies</a>
+                </div>
+                <div>
+                    <a href="preferencias_cookies.html" class="mx-2">Alterar preferências de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        const topButton = document.getElementById("topButton");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</html>
