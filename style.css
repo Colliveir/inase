@@ -27,12 +27,12 @@ header a {
     cursor: pointer;
 }
 
-#menuDesktop {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.menuDesktop{
+    display: block !important;
+}
+
+.menuMobile{
+    display: none !important;
 }
 
 .dropdown-menu {
@@ -279,6 +279,14 @@ footer a {
     color: #FF4704;
 }
 
+.sliderDesktop {
+    display: block !important;
+}
+
+.sliderMobile {
+    display: none !important;
+}
+
 .pagIni_imghover img {
     transition: transform 0.3s ease-in-out;
 }
@@ -295,13 +303,25 @@ footer a {
 }
 
 .pagIni_sec3 img {
-    width: 70%;
+    width: 270px;
+}
+
+#titlesec3 {
+    color: #FF4704;
+    font-family: "Poppins", serif !important;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 10%;
 }
 
 .pagIni_sec4 {
     background-image: url(images/carretas_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pagIni_sec4 img {
+    width: 270px;
 }
 
 #footer-pagIni a:hover {
@@ -361,7 +381,7 @@ footer a {
     color: #7D0281;
 }
 
-.doeagora{
+.doeagora {
     margin-left: 2.5%;
 }
 
@@ -453,13 +473,45 @@ footer a {
 
 @media(max-width: 768px) {
 
+    .menuDesktop{
+        display: none !important;
+    }
+
+    .menuMobile{
+        display: block !important;
+    }
+
     footer img {
         width: 180px;
     }
 
+    /* INDEX.HTML (PÁGINA INICIAL) */
+
+    .sliderDesktop {
+        display: none !important;
+    }
+
+    .sliderMobile {
+        display: block !important;
+    }
+
+    .pagIni_sec3 {
+        background-image: url(images/PAGINA_INICIAL_10.png);
+    }
+
+    .pagIni_sec3 img {
+        width: 250px;
+    }
+
+    .pagIni_sec4 img {
+        width: 250px;
+    }
+
+    /* END INDEX.HTML (PÁGINA INICIAL) */
+
     /* IGV.HTML (GERANDO VIDAS) */
 
-    .doeagora{
+    .doeagora {
         margin-left: 0;
     }
 
