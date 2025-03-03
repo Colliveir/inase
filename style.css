@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans, sans-serif;
+}
+
+/* HEADER - MENU */
+header {
+    background-color: #F2F2F2;
+    display: block;
+    text-align: center !important;
+    padding: 0px;
+    width: 100%;
+}
+
+.btnpre:hover {
+    opacity: 0.5;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px !important;
+    margin: 0 10px;
+    transition: 0.7s !important;
+    cursor: pointer;
+}
+
+#menuDesktop {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+    min-width: 200px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    display: none;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+    color: #333;
+    text-decoration: none;
+    margin: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #eeeeee !important;
+}
+
+/* END HEADER - MENU */
+
+/* Geral */
+
+textarea {
+    max-height: 300px;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Rotaciona o ícone quando o dropdown estiver aberto */
+[aria-expanded="true"] .rotate-icon {
+    transform: rotate(180deg);
+}
+
+.lispace {
+    padding: 0 !important;
+}
+
+.lispace li {
+    margin: 1rem 0;
+}
+
+.liststylenone li {
+    list-style-type: none;
+}
+
+ol {
+    padding-left: 1rem !important;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-height: 600px;
+    border-radius: 10px;
+}
+
+/* login background */
+#bgimg {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-button {
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.partner-button:hover {
+    opacity: 0.6;
+}
+
+.login-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.custom-border {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.justify {
+    text-align: justify;
+}
+
+/* efeito slide banners */
+
+/* left */
+.img-slide-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.img-slide-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* right */
+.img-slide-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.img-slide-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* end efeito slide banners */
+
+/* BUTTON PAGE UP */
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#topButton button {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #636363;
+    color: white;
+}
+
+#topButton button:hover {
+    background-color: #8a8a8a;
+    transition: 0.5s;
+}
+
+/* END BUTTON PAGE UP */
+
+/* DIRETÓRIOS */
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    padding: 5px;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li::after {
+    content: ">";
+    color: #6d6d6d;
+    margin: 0 8px;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+/* END DIRETÓTIOS */
+
+/* END Geral */
+
+/* FOOTER */
+footer {
+    background-color: #F2F2F2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: 0.7s;
+}
+
+/* END FOOTER */
+
+/* INDEX.HTML (PÁGINA INICIAL) */
+#header-pagIni a:hover {
+    color: #FF4704;
+}
+
+.colorindex {
+    color: #FF4704;
+}
+
+.pagIni_imghover img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.pagIni_imghover img:hover {
+    transform: scale(1.05);
+}
+
+.pagIni_sec3 {
+    background-image: url(images/PAGINA_INICIAL_09.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.pagIni_sec3 img {
+    width: 70%;
+}
+
+.pagIni_sec4 {
+    background-image: url(images/carretas_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer-pagIni a:hover {
+    color: #FF4704;
+}
+
+.min-height {
+    min-height: 600px;
+}
+
+/* END INDEX.HTML (PÁGINA INICIAL) */
+
+/* DPI.HTML (DIAGNÓSTICO POR IMAGEM) */
+
+#header-pagdpi a:hover {
+    color: #8D1AD4;
+}
+
+.colordpi {
+    color: #8D1AD4;
+}
+
+.dpirow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-pagdpi a:hover {
+    color: #8D1AD4;
+}
+
+/* END DPI.HTML (DIAGNÓSTICO POR IMAGEM) */
+
+/* TELEMED.HTML (TELEMEDICINA) */
+
+#header-pagtelemed a:hover {
+    color: #FF4704;
+}
+
+.colortelemed {
+    color: #FF4704;
+}
+
+#footer-pagtelemed a:hover {
+    color: #FF4704;
+}
+
+/* END TELEMED.HTML (TELEMEDICINA) */
+
+/* IGV.HTML (GERANDO VIDAS) */
+
+#header-pagigv a:hover {
+    color: #7D0281;
+}
+
+.colorigv {
+    color: #7D0281;
+}
+
+.doeagora{
+    margin-left: 2.5%;
+}
+
+#footer-pagigv a:hover {
+    color: #7D0281;
+}
+
+/* END IGV.HTML (VIDAS) */
+
+/* DOACOES.HTML */
+.pagsegurobox {
+    margin-top: 5%;
+}
+
+.mainForm {
+    margin: 0 !important;
+    width: 400px !important;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#doar-pagseguro .logo img {
+    width: 100%;
+}
+
+#doar-pagseguro .amounts .option {
+    color: #000;
+}
+
+#doar-pagseguro .frequency button {
+    color: #000;
+}
+
+#doar-pagseguro .active {
+    background-color: #7D0281;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+#doar-pagseguro a {
+    color: #7D0281;
+    font-weight: bold;
+}
+
+#doar-pagseguro .submit {
+    background-color: #7D0281;
+}
+
+/* END DOACOES.HTML */
+
+/* LABORATÓRIO */
+
+.colorlab {
+    color: #c10472;
+}
+
+#header-paglab a:hover {
+    color: #c10472;
+}
+
+.labrow a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-paglab a:hover {
+    color: #c10472;
+}
+
+/* END LABORATÓRIO */
+
+/* ODONTOLOGIA */
+#header-pagodont a:hover {
+    color: #0a5a85;
+}
+
+.colorodont {
+    color: #0a5a85;
+}
+
+#footer-pagodont a:hover {
+    color: #0a5a85;
+}
+
+/* END ODONTOLOGIA */
+
+@media(max-width: 768px) {
+
+    footer img {
+        width: 180px;
+    }
+
+    /* IGV.HTML (GERANDO VIDAS) */
+
+    .doeagora{
+        margin-left: 0;
+    }
+
+    /* END IGV.HTML (VIDAS) */
+
+}
