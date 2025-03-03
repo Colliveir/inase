@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- HEADER -->
+    <header id="header-paglab" class="px-5 py-3">
+        <div class="container">
+            <div class="d-flex justify-content-end px-5">
+                <ul class="list-unstyled d-flex mt-2" style="margin: 0 3%;">
+                    <li class="nav-item me-3"><a class="nav-link" href="carreira.html">Carreira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
+                </ul>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="lab.html">
+                    <img src="images/logo_laboratorio.png" alt="logo" width="150px">
+                </a>
+
+                <!-- Botão do menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu principal -->
+                <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasMenu"
+                    aria-labelledby="offcanvasMenuLabel" style="background-color: #F2F2F2;">
+                    <ul class="navbar-nav offcanvas-body ps-3">
+                        <li class="nav-item"><a class="nav-link btn btnpre py-2"
+                                style="border:2px solid #c10472; background-color: #c10472; color: #fff;"
+                                href="lab_paciente.html">Paciente</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn p-2" href="lab_empresa.html"
+                                style="border:2px solid #c10472;">Empresa</a></li>
+                        <li class="nav-item dropdown">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Por dentro do Inase
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
+                                <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
+                                <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
+                            </ul>
+                        </li>
+
+                        <div class="dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                            <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Nossos Negócios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="saudepubli.html">Saúde
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="dpi.html">Diagnóstico por Imagem &nbsp
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dpi_itinerante.html ">Projetos
+                                                Itinerante</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="lab.html">Laboratório
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
+                                                Itinerante</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                        href="odontologia.html">Odontologia
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
+                                                Itinerante</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="telemed.html">Telemedicina</a></li>
+                                <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
+                                        Social</a>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Transparência
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
+                                        Humanos
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                                RH</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Compras & Contratações
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
+                                                de Compras e Contratações</a></li>
+                                        <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                                Convocatórios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Regulamentos
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                                href="compliance.html">
+                                                Compliance
+                                                <i class="bi bi-arrow-right colorlab"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
+                                                        Denúncia</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
+                                        href="convenios_&_contratos.html">
+                                        Convênios e Contratos de Gestão &nbsp
+                                        <i class="bi bi-arrow-right colorlab"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="login_prestcontas.html"
+                                                target="_blank">Prestação de
+                                                Contas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 rounded btnpre" href="login_lab.html" target="_blank"
+                                style="background-color: #c10472; color:#fff;">Resultados de Exames</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <section class="container">
+
+        <div class="text-center mt-4">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a>Laboratório</a></li>
+            </ul>
+
+            <!-- Vídeo -->
+            <section class="video">
+                <video autoplay loop muted playsinline style="width: 100%; transform: scaleY(0.9);">
+                    <source src="videos/LABORATÓRIO.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </section>
+            <!-- End Vídeo -->
+
+            <section class="mt-4 justify">
+                <h2 class="colorlab"><b>Soluções em Análises Clínicas</b></h2></br>
+                <p>Somos o Inase Laboratório. Um modelo novo, que amplia e integra o cuidado com sua saúde ao longo de
+                    toda
+                    a
+                    vida.
+                </p>
+                <p>Conectamos espaços, tecnologias, conhecimentos, multiplicamos especialidades e nos tornamos
+                    completos,
+                    viva
+                    e em movimento, sempre em evolução.
+                </p>
+                <p>Desenvolvemos o que há de mais inovador em tecnologia e saúde com novas soluções digitais que
+                    buscamos
+                    no
+                    mercado, via inovação.
+                </p>
+                <p>Nossa equipe é composta por profissionais altamente capacitados e comprometidos com a excelência em
+                    todas as
+                    etapas do processo laboratorial. E todos os dias nos comprometemos com nossos pilares para o sucesso
+                    do
+                    Inase Laboratório.
+                </p>
+                </br>
+                <h4 class="colorlab"><b>Pilares de sucesso:</b></h4>
+                <ol>
+                    </br>
+                    <li><b>Diversidade de Especializações:</b> A equipe é formada por uma combinação de bioquímicos,
+                        biólogos,
+                        farmacêuticos e técnicos de laboratório, cada um trazendo uma expertise única para garantir
+                        precisão
+                        nos
+                        resultados.</li>
+                    </br>
+                    <li><b>Educação e Treinamento Contínuo:</b> Os membros da equipe participam regularmente de cursos
+                        de
+                        atualização e
+                        treinamentos, mantendo-se atualizados com as mais recentes tecnologias e metodologias em
+                        análises
+                        clínicas. </li>
+                    </br>
+                    <li><b>Comunicação Eficaz:</b> Valorizamos a comunicação clara e eficiente entre todos os membros,
+                        facilitando o
+                        fluxo de trabalho e a troca de informações cruciais para o diagnóstico correto.</li>
+                    </br>
+                    <li><b>Foco no Paciente:</b> Os profissionais são incentivados a se comprometer em colocar o
+                        bem-estar
+                        do
+                        paciente
+                        em primeiro lugar, assegurando que todas as etapas dos exames sejam realizadas com cuidado e
+                        precisão.
+                    </li>
+                    </br>
+                    <li><b>Inovação e Melhoria Contínua:</b> Estamos sempre em busca de novas tecnologias e métodos para
+                        melhorar a
+                        precisão e a eficiência dos exames, adotando práticas de melhoria contínua.</li>
+                    </br>
+                    <li><b>Trabalho em Equipe e Colaboração:</b> Há um forte espírito de colaboração e trabalho em
+                        equipe,
+                        onde
+                        cada
+                        membro sabe da importância de seu papel no processo e apoia os demais para alcançar os melhores
+                        resultados possíveis.</li>
+                    </br>
+                    <li><b>Gestão de Qualidade:</b> Seguimos rigorosos protocolos de controle de qualidade e participa
+                        ativamente em
+                        auditorias e avaliações para garantir a conformidade com padrões nacionais e internacionais.
+                    </li>
+                    </br>
+                    <li><b>Ética e Confidencialidade:</b> Todos os dias temos o comprometimento com a ética e a
+                        confidencialidade dos
+                        dados dos pacientes, assegurando que as informações sensíveis sejam tratadas com o máximo de
+                        respeito e
+                        discrição.</li>
+                </ol>
+            </section>
+
+            <section class="mt-4">
+                <img class="d-block w-100 mx-auto img-fluid img-slide-left rounded" data-src="images/laboratorio4.png"
+                    alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            </section>
+
+            <section class="my-4">
+                <img class="d-block w-100 mx-auto img-fluid img-slide-right rounded" data-src="images/laboratorio1.png"
+                    alt="inase" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            </section>
+    </section>
+
+    <a href="#" id="topButton">
+        <button>
+            <i class="bi bi-chevron-up"></i>
+        </button>
+    </a>
+
+    <!-- Footer -->
+    <footer class="py-5" id="footer-paglab">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center text-lg-start">
+                <div class="col">
+                    <a href="lab.html">
+                        <img src="images/logo_laboratorio.png" class="img-fluid" width="250px" alt="Logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <h6><b>Mais em Página Inicial</b></h6>
+                    <a href="quemsomos.html" class="d-block">Por dentro do Inase</a>
+                    <a href="saudepubli.html" class="d-block">Nossos Negócios</a>
+                    <a href="regulamento_rh.html" class="d-block">Transparência</a>
+                </div>
+                <div class="col">
+                    <h6><b>Mais Sobre o Inase</b></h6>
+                    <a href="carreira.html" class="d-block">Carreira</a>
+                    <a href="imprensa.html" class="d-block">Imprensa</a>
+                    <a href="faleconosco.html" class="d-block">Fale Conosco</a>
+                </div>
+                <div class="col">
+                    <h6><b>Conecte-se com Inase</b></h6>
+                    <a href="https://www.instagram.com/inasebrasil/" target="_blank" class="d-block">
+                        <i class="bi bi-instagram fs-5"></i> Instagram
+                    </a>
+                    <a href="http://www.facebook.com/inasebrasil" target="_blank" class="d-block">
+                        <i class="bi bi-facebook fs-5"></i> Facebook
+                    </a>
+                    <a href="https://www.linkedin.com/company/inasebrasil/" target="_blank" class="d-block">
+                        <i class="bi bi-linkedin fs-5"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
+                <div>
+                    <a href="acessibilidade.html" class="mx-2">Acessibilidade</a>
+                    <a href="termos_e_condicoes.html" class="mx-2">Termos e Condições</a>
+                    <a href="politica_privacidade.html" class="mx-2">Políticas de Privacidade</a>
+                    <a href="politica_cookies.html" class="mx-2">Política de Cookies</a>
+                </div>
+                <div>
+                    <a href="preferencias_cookies.html" class="mx-2">Alterar preferências de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        // Efeito slide banners
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-slide-left, .img-slide-right");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add("active");
+                        observer.unobserve(img);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            images.forEach(img => observer.observe(img));
+        });
+        // topbutton
+        const topButton = document.getElementById("topButton");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</html>
