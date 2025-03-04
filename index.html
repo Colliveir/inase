@@ -311,7 +311,7 @@
                             <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
                             <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
                             <li class="nav-item">
-                                <a class="nav-link px-4 rounded btnpre px-5" href="faleconosco.html"
+                                <a class="nav-link px-4 rounded btnpre" href="faleconosco.html"
                                     style="background-color: #FF4704; color:#fff;">Contate-nos</a>
                             </li>
                         </ul>
@@ -493,46 +493,6 @@
             }
         });
         // End Top button
-
-        // script para o menu mobile
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("Script carregado!");
-
-            document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
-                element.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    e.stopPropagation(); // Evita o fechamento imediato
-
-                    let submenu = this.nextElementSibling;
-                    if (submenu) {
-                        let isOpen = submenu.classList.contains("show");
-
-                        // Fecha todos os submenus antes de abrir o novo
-                        document.querySelectorAll(".dropdown-submenu .dropdown-menu.show").forEach(function (menu) {
-                            if (menu !== submenu) {
-                                menu.classList.remove("show");
-                            }
-                        });
-
-                        // Alterna a visibilidade do submenu
-                        submenu.classList.toggle("show", !isOpen);
-                        console.log(isOpen ? "Fechando submenu" : "Abrindo submenu", submenu);
-                    }
-                });
-            });
-
-            // Fecha submenus ao clicar fora deles
-            document.addEventListener("click", function (e) {
-                let isDropdown = e.target.closest(".dropdown-menu");
-                if (!isDropdown) {
-                    console.log("Clique fora do menu detectado, fechando submenus.");
-                    document.querySelectorAll(".dropdown-submenu .dropdown-menu.show").forEach(function (menu) {
-                        menu.classList.remove("show");
-                    });
-                }
-            });
-        });
-        // end script para o menu mobile
     </script>
 
 </body>
