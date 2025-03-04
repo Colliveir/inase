@@ -237,7 +237,6 @@
                                 </li>
                             </ul>
                             </li>
-
                             <li class="nav-item dropdown">
                             <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Transparência</li>
@@ -484,26 +483,6 @@
             } else {
                 topButton.style.display = "none";
             }
-        });
-
-        $(document).ready(function () {
-            // Ao clicar em um item do menu, alterna a visibilidade do submenu
-            $('.dropdown-submenu > a').on('click', function (e) {
-                var $submenu = $(this).next('ul'); // encontra o submenu
-                if ($submenu.is(':visible')) {
-                    $submenu.slideUp(200); // fecha o submenu
-                } else {
-                    $submenu.stop(true, true).slideDown(200); // abre o submenu
-                }
-                e.stopPropagation(); // Impede que o clique se propague para o menu principal
-            });
-
-            // Fecha os submenus ao clicar fora
-            $(document).on('click', function (e) {
-                if (!$(e.target).closest('.dropdown').length) {
-                    $('.dropdown-menu').slideUp(200);
-                }
-            });
         });
 
     </script>
