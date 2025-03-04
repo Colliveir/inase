@@ -29,167 +29,287 @@
     <!-- HEADER -->
     <header id="header-pagIni" class="px-5 py-3">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <!-- LOGO -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="logo" width="150px">
-                </a>
 
-                <!-- Botão do menu mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-                    aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- MENU DESKTOP -->
+            <div class="menuDesktop">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- LOGO -->
+                    <a class="navbar" href="index.html">
+                        <img src="images/logo.png" alt="logo" width="150px"></a>
 
-                <!-- Menu principal -->
-                <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasMenu"
-                    aria-labelledby="offcanvasMenuLabel" style="background-color: #F2F2F2;">
-                    <ul class="navbar-nav offcanvas-body ps-3">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Por dentro do Inase
+                    <div class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Por dentro do Inase</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
+                                    <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
+                                    <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
+                                    <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"> Nossos Negócios</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="saude.html">Saúde <i
+                                                class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="dpi.html">Diagnóstico por Imagem
+                                            <i class="bi bi-arrow-right ms-2 ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="dpi_itinerante.html">Projetos
+                                                    Itinerante</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="lab.html">Laboratório<i
+                                                class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
+                                                    Itinerante</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="odontologia.html">Odontologia
+                                            <i class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
+                                                    Itinerante</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="telemed.html">Telemedicina</a></li>
+                                    <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
+                                            Social</a>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Transparência</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
+                                            Humanos<i class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                                    RH</a></li>
+                                            <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                            Compras & Contratações<i class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item py-2"
+                                                    href="compras_&_contratacoes.html">Regulamento
+                                                    Compras e Contratações</a></li>
+                                            <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                                    Convocatórios</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                            Regulamentos<i class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                                    href="compliance.html">Compliance
+                                                    <i class="bi bi-arrow-right ms-2 colorindex"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
+                                                            Denúncia</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                            <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
+                                            href="convenios_&_contratos.html">
+                                            Convênios e Contratos de Gestão<i
+                                                class="bi bi-arrow-right ms-2 colorindex"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="login_prestcontas.html"
+                                                    target="_blank">Prestação de Contas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
+                            <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4 rounded btnpre" href="faleconosco.html"
+                                    style="background-color: #FF4704; color:#fff;">Contate-nos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- END MENU DESKTOP -->
+
+            <!-- MENU MOBILE -->
+            <div class="menuMobile">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- LOGO -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="logo" width="150px">
+                    </a>
+
+                    <!-- Botão do menu mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasMenu"
+                        aria-labelledby="offcanvasMenuLabel" style="background-color: #F2F2F2;">
+                        <ul class="navbar-nav offcanvas-body ps-3">
+
+                            <!-- LOGO -->
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" alt="logo" width="150px">
                             </a>
+
+                            <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+
+                            <li class="nav-item dropdown">
+                            <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Por dentro do Inase
+                            </li>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item py-2" href="quemsomos.html">Quem Somos</a></li>
                                 <li><a class="dropdown-item py-2" href="faleconosco.html">Fale Conosco</a></li>
                                 <li><a class="dropdown-item py-2" href="onde_estamos.html">Onde Estamos</a></li>
                                 <li><a class="dropdown-item py-2" href="IGV.html">IGV</a></li>
                             </ul>
-                        </li>
+                            </li>
 
-                        <div class="dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
-                            <a class="nav-link dropdown-toggle" id="nav3" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <li class="nav-item dropdown">
+                            <li class="nav-link dropdown-toggle" id="nav3-mobile" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Nossos Negócios
-                            </a>
+                            </li>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="saudepubli.html">Saúde
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
-                                    </ul>
+                                <li><a class="dropdown-item py-2" href="saude.html">Saúde</a></li>
+                                <li><a class="dropdown-item py-2" href="dpi.html">Diagnóstico por Imagem</a>
                                 </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="dpi.html">Diagnóstico por Imagem &nbsp
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="dpi_itinerante.html ">Projetos
-                                                Itinerante</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="lab.html">Laboratório
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="lab_itinerante.html">Projetos
-                                                Itinerante</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2"
-                                        href="odontologia.html">Odontologia
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="odontologia_itinerante.html">Projetos
-                                                Itinerante</a></li>
-                                    </ul>
-                                </li>
+                                <li><a class="dropdown-item py-2" href="lab.html">Laboratório</a></li>
+                                <li><a class="dropdown-item py-2" href="odontologia.html">Odontologia</a></li>
                                 <li><a class="dropdown-item py-2" href="telemed.html">Telemedicina</a></li>
                                 <li><a class="dropdown-item py-2" href="assistencia_social.html">Assistência
                                         Social</a>
                                 </li>
                                 <li><a class="dropdown-item py-2" href="educacao.html">Educação</a></li>
                             </ul>
-                        </div>
+                            </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="nav1" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Transparência
-                            </a>
+                            <li class="nav-item dropdown">
+                            <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Projetos
+                            </li>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">Recursos
-                                        Humanos
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
-                                                RH</a>
-                                        </li>
-                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
-                                    </ul>
+                                <li><a class="dropdown-item" href="projdengue.html">Projeto Dengue</a></li>
+                                <li><a class="dropdown-item py-2" href="lab_itinerante.html">Laboratório
+                                        Itinirante</a>
                                 </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Compras & Contratações
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
-                                                de Compras e Contratações</a></li>
-                                        <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
-                                                Convocatórios</a></li>
-                                    </ul>
+                               <li><a class="dropdown-item py-2" href="dpi_itinerante.html">Diagnóstico por
+                                        Imagem Itinirante</a>
                                 </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Regulamentos
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
-                                                href="compliance.html">
-                                                Compliance
-                                                <i class="bi bi-arrow-right colorindex"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="canal_de_denuncia.html">Canal de
-                                                        Denúncia</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
-                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item  d-flex justify-content-between align-items-center py-2"
-                                        href="convenios_&_contratos.html">
-                                        Convênios e Contratos de Gestão &nbsp
-                                        <i class="bi bi-arrow-right colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="login_prestcontas.html"
-                                                target="_blank">Prestação de
-                                                Contas</a></li>
-                                    </ul>
+                                <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Odontologia
+                                        Itinirante</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
-                        <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 rounded btnpre px-5" href="faleconosco.html"
-                                style="background-color: #FF4704; color:#fff;">Contate-nos</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                            </li>
+
+                            <!-- transparência -->
+                            <li class="nav-item dropdown">
+                                <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recursos Humanos
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                            RH</a></li>
+                                    <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Compras & Contratações
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
+                                            C&C </a></li>
+                                    <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                            Convocatórios</a></li>
+                                </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Regulamentos
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
+                                    <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                    <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                    <li><a class="dropdown-item py-2" href="canal_de_denuncia.html">Canal de
+                                            Denúncia</a></li>
+                                </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Convênios e contratos
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
+                                            Contratos de Gestão</a></li>
+                                    <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
+                                            Contas</a></li>
+                                </ul>
+                                </li>
+                                <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
+                                <!-- end transparência -->
+                            <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
+                            <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4 rounded btnpre" href="faleconosco.html"
+                                    style="background-color: #FF4704; color:#fff;">Contate-nos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
+        <!-- END MENU MOBILE -->
     </header>
     <!-- END HEADER -->
 
@@ -269,7 +389,7 @@
                 <div class="col">
                     <h6><b>Mais em Página Inicial</b></h6>
                     <a href="quemsomos.html" class="d-block">Por dentro do Inase</a>
-                    <a href="saudepubli.html" class="d-block">Nossos Negócios</a>
+                    <a href="saude.html" class="d-block">Nossos Negócios</a>
                     <a href="regulamento_rh.html" class="d-block">Transparência</a>
                 </div>
                 <div class="col">
@@ -308,9 +428,9 @@
     <!-- End Footer -->
 
     <script>
-        // efeito slide banners
+        // Efeito slide banners
         document.addEventListener("DOMContentLoaded", function () {
-            const images = document.querySelectorAll(".img-slide-left");
+            const images = document.querySelectorAll(".img-slide-left, .img-slide-right");
 
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
@@ -322,8 +442,10 @@
                     }
                 });
             }, { threshold: 0.2 });
+
             images.forEach(img => observer.observe(img));
         });
+
         // topbutton
         const topButton = document.getElementById("topButton");
 
@@ -333,8 +455,7 @@
             } else {
                 topButton.style.display = "none";
             }
-        };
-
+        }
     </script>
 
 </body>
