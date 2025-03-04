@@ -239,7 +239,7 @@
                             </li>
                             <li class="nav-item dropdown">
                             <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Transparência -----</li>
+                                data-bs-toggle="dropdown" aria-expanded="false">Transparência</li>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
@@ -306,12 +306,6 @@
             </div>
         </div>
         <!-- END MENU MOBILE -->
-
-        <!-- Scripts do Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
     </header>
     <!-- END HEADER -->
 
@@ -484,9 +478,23 @@
                 topButton.style.display = "none";
             }
         });
-
+        // Script para expandir o submenu ao clicar
+        document.addEventListener('DOMContentLoaded', function () {
+            const submenus = document.querySelectorAll('.dropdown-submenu > a');
+            submenus.forEach(submenu => {
+                submenu.addEventListener('click', function (e) {
+                    e.preventDefault(); // Evita o comportamento padrão
+                    const submenuList = submenu.nextElementSibling;
+                    submenuList.classList.toggle('show');
+                });
+            });
+        });
     </script>
-
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
