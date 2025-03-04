@@ -27,11 +27,11 @@ header a {
     cursor: pointer;
 }
 
-.menuDesktop{
+.menuDesktop {
     display: block !important;
 }
 
-.menuMobile{
+.menuMobile {
     display: none !important;
 }
 
@@ -473,13 +473,16 @@ footer a {
 
 @media(max-width: 768px) {
 
-    .menuDesktop{
+    /* MENU MOBILE */
+    .menuDesktop {
         display: none !important;
     }
 
-    .menuMobile{
+    .menuMobile {
         display: block !important;
     }
+
+    /* END MENU MOBILE */
 
     footer img {
         width: 180px;
@@ -500,12 +503,20 @@ footer a {
     }
 
     .pagIni_sec3 img {
-        width: 250px;
+        width: 200px;
     }
 
     .pagIni_sec4 img {
-        width: 250px;
+        width: 200px;
     }
+
+    /* PDF */
+
+    .pdf{
+        width: 50px;
+    }
+
+    /* END PDF */
 
     /* END INDEX.HTML (PÁGINA INICIAL) */
 
