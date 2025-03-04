@@ -459,6 +459,33 @@
     <!-- End Footer -->
 
     <script>
+        // Efeito slide banners
+        const images = document.querySelectorAll(".img-slide-left");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add("active");
+                    observer.unobserve(img);
+                }
+            });
+        }, { threshold: 0.2 });
+        images.forEach(img => observer.observe(img));
+        // End Efeito slide banners
+
+        // Top button
+        const topButton = document.getElementById("topButton");
+
+        window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        });
+
         document.addEventListener("DOMContentLoaded", function () {
             console.log("Script carregado!");
 
