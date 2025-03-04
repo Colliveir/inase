@@ -244,15 +244,15 @@
                             </li>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Recursos Humanos
-                                        <i class="bi bi-arrow-down colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
-                                                RH</a></li>
-                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
-                                    </ul>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                    Recursos Humanos
+                                    <i class="bi bi-arrow-down colorindex"></i>
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                            RH</a></li>
+                                    <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
@@ -494,15 +494,12 @@
             submenuLink.addEventListener('click', function (e) {
                 var nextElement = submenuLink.nextElementSibling;
 
-                // Verificar se o submenu já está visível
-                if (nextElement.classList.contains('show')) {
-                    nextElement.classList.remove('show');  // Fecha o submenu se já estiver aberto
-                } else {
-                    nextElement.classList.add('show');  // Abre o submenu
-                }
+                // Alterna a classe 'show' para abrir ou fechar o submenu
+                nextElement.classList.toggle('show');
 
-                e.stopPropagation();  // Impede que o evento de clique propague para o menu principal
-                e.preventDefault();   // Evita o fechamento automático do dropdown principal
+                // Impede o evento de clicar de propagação e o comportamento padrão do Bootstrap
+                e.stopPropagation();
+                e.preventDefault();
             });
         });
 
