@@ -490,6 +490,22 @@
                 }
             });
         });
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (submenuLink) {
+            submenuLink.addEventListener('click', function (e) {
+                var nextElement = submenuLink.nextElementSibling;
+
+                // Verificar se o submenu já está visível
+                if (nextElement.classList.contains('show')) {
+                    nextElement.classList.remove('show');  // Fecha o submenu se já estiver aberto
+                } else {
+                    nextElement.classList.add('show');  // Abre o submenu
+                }
+
+                e.stopPropagation();  // Impede que o evento de clique propague para o menu principal
+                e.preventDefault();   // Evita o fechamento automático do dropdown principal
+            });
+        });
+
     </script>
     <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
