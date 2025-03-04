@@ -255,44 +255,43 @@
                                 </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Compras & Contratações
-                                        <i class="bi bi-arrow-down colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
-                                                de Compras e
-                                                Contratações</a></li>
-                                        <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
-                                                Convocatórios</a></li>
-                                    </ul>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                    Compras & Contratações
+                                    <i class="bi bi-arrow-down colorindex"></i>
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
+                                            de Compras e Contratações</a></li>
+                                    <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
+                                            Convocatórios</a></li>
+                                </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Regulamentos
-                                        <i class="bi bi-arrow-down colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
-                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
-                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
-                                        <li><a class="dropdown-item py-2" href="canal_de_denuncia.html">Canal de
-                                                Denúncia</a></li>
-                                    </ul>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                    Regulamentos
+                                    <i class="bi bi-arrow-down colorindex"></i>
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
+                                    <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                    <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                    <li><a class="dropdown-item py-2" href="canal_de_denuncia.html">Canal de
+                                            Denúncia</a></li>
+                                </ul>
                                 </li>
                                 <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                        Convênios e contratos
-                                        <i class="bi bi-arrow-down colorindex"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
-                                                Contratos de
-                                                Gestão</a></li>
-                                        <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
-                                                Contas</a></li>
-                                    </ul>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                    Convênios e contratos
+                                    <i class="bi bi-arrow-down colorindex"></i>
+                                </li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
+                                            Contratos de
+                                            Gestão</a></li>
+                                    <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
+                                            Contas</a></li>
+                                </ul>
                                 </li>
                             </ul>
                             </li>
@@ -494,12 +493,15 @@
             submenuLink.addEventListener('click', function (e) {
                 var nextElement = submenuLink.nextElementSibling;
 
-                // Alterna a classe 'show' para abrir ou fechar o submenu
-                nextElement.classList.toggle('show');
+                // Verificar se o submenu já está visível
+                if (nextElement.classList.contains('show')) {
+                    nextElement.classList.remove('show');  // Fecha o submenu se já estiver aberto
+                } else {
+                    nextElement.classList.add('show');  // Abre o submenu
+                }
 
-                // Impede o evento de clicar de propagação e o comportamento padrão do Bootstrap
-                e.stopPropagation();
-                e.preventDefault();
+                e.stopPropagation();  // Impede que o evento de clique propague para o menu principal
+                e.preventDefault();   // Evita o fechamento automático do dropdown principal
             });
         });
 
