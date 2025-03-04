@@ -237,7 +237,7 @@
                                 <li><a class="dropdown-item py-2" href="lab_itinerante.html">Laboratório
                                         Itinirante</a>
                                 </li>
-                                <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Diagnóstico por
+                               <li><a class="dropdown-item py-2" href="dpi_itinerante.html">Diagnóstico por
                                         Imagem Itinirante</a>
                                 </li>
                                 <li><a class="dropdown-item py-2" href="odontologia_itinerante.html">Odontologia
@@ -286,8 +286,6 @@
                             </ul>
                             </li>
 
-                            <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
-
                             <li class="nav-item dropdown">
                             <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -300,6 +298,7 @@
                                         Contas</a></li>
                             </ul>
                             </li>
+                            <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
                             <!-- end transparência -->
 
                             <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
@@ -461,32 +460,33 @@
 
     <script>
         // Efeito slide banners
-        const images = document.querySelectorAll(".img-slide-left");
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".img-slide-left, .img-slide-right");
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.add("active");
-                    observer.unobserve(img);
-                }
-            });
-        }, { threshold: 0.2 });
-        images.forEach(img => observer.observe(img));
-        // End Efeito slide banners
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add("active");
+                        observer.unobserve(img);
+                    }
+                });
+            }, { threshold: 0.2 });
 
-        // Top button
+            images.forEach(img => observer.observe(img));
+        });
+
+        // topbutton
         const topButton = document.getElementById("topButton");
 
-        window.addEventListener("scroll", function () {
+        window.onscroll = function () {
             if (document.documentElement.scrollTop > 200) {
                 topButton.style.display = "block";
             } else {
                 topButton.style.display = "none";
             }
-        });
-        // End Top button
+        };
     </script>
 
 </body>
