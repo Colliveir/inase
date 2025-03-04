@@ -512,8 +512,8 @@ footer a {
 
     /* PDF */
 
-    .pdf{
-        width: 50px;
+    .pdf img{
+        width: 40%;
     }
 
     /* END PDF */
