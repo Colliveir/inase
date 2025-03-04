@@ -243,17 +243,16 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">Transparência</li>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                    Recursos
-                                    Humanos
-                                    <i class="bi bi-arrow-down colorindex"></i>
-                                </li>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
-                                            RH</a>
-                                    </li>
-                                    <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
-                                </ul>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Recursos Humanos
+                                        <i class="bi bi-arrow-down colorindex"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
+                                                RH</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
+                                    </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
@@ -268,34 +267,33 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                    Regulamentos
-                                    <i class="bi bi-arrow-down colorindex"></i>
-                                </li>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                    <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
-                                    <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
-                                    <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
-                                    <li><a class="dropdown-item py-2" href="canal_de_denuncia.html">Canal de
-                                            Denúncia</a></li>
-                                </ul>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Regulamentos
+                                        <i class="bi bi-arrow-down colorindex"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                        <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
+                                        <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
+                                        <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
+                                        <li><a class="dropdown-item py-2" href="canal_de_denuncia.html">Canal de
+                                                Denúncia</a></li>
+                                    </ul>
                                 </li>
                                 <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
                                 <li class="nav-item dropdown">
-                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                    Convênio
-                                    e contratos <i class="bi bi-arrow-down colorindex"></i>
-                                </li>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
-                                            Contratos de
-                                            Gestão</a>
-                                    </li>
-                                    <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
-                                            Contas</a>
-                                    </li>
-                                </ul>
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Convênio e contratos <i class="bi bi-arrow-down colorindex"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
+                                                Contratos de
+                                                Gestão</a>
+                                        </li>
+                                        <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
+                                                Contas</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             </li>
@@ -483,41 +481,15 @@
         images.forEach(img => observer.observe(img));
         // End Efeito slide banners
 
-        $(document).ready(function () {
-            // Fechar dropdown ao clicar novamente
-            $('.dropdown-toggle').on('click', function (e) {
-                var $el = $(this).next('.dropdown-menu');
-                var isVisible = $el.is(':visible');
+        // Top button
+        const topButton = document.getElementById("topButton");
 
-                // Fecha todos os dropdowns
-                $('.dropdown-menu').slideUp('400');
-
-                // Se o dropdown não estava visível, abre ele
-                if (!isVisible) {
-                    $el.stop(true, true).slideDown('400');
-                }
-
-                // Impede a navegação do link
-                e.preventDefault();
-            });
-
-            // Fechar dropdowns ao clicar fora do menu
-            $(document).on('click.dropdown', function (e) {
-                if (!$(e.target).closest('.dropdown').length) {
-                    $('.dropdown-menu').slideUp('400');
-                }
-            });
-
-            // Top button
-            const topButton = document.getElementById("topButton");
-
-            window.addEventListener("scroll", function () {
-                if (document.documentElement.scrollTop > 200) {
-                    topButton.style.display = "block";
-                } else {
-                    topButton.style.display = "none";
-                }
-            });
+        window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
         });
 
     </script>
