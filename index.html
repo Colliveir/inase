@@ -239,7 +239,9 @@
                             </li>
                             <li class="nav-item dropdown">
                             <li class="nav-link dropdown-toggle" id="nav1-mobile" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Transparência</li>
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Transparência
+                            </li>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
@@ -248,8 +250,7 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item py-2" href="regulamento_rh.html">Regulamento de
-                                                RH</a>
-                                        </li>
+                                                RH</a></li>
                                         <li><a class="dropdown-item py-2" href="carreira.html">Carreira</a></li>
                                     </ul>
                                 </li>
@@ -260,7 +261,8 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item py-2" href="compras_&_contratacoes.html">Regulamento
-                                                de Compras e Contratações</a></li>
+                                                de Compras e
+                                                Contratações</a></li>
                                         <li><a class="dropdown-item py-2" href="atos_convocatorios.html">Atos
                                                 Convocatórios</a></li>
                                     </ul>
@@ -271,7 +273,6 @@
                                         <i class="bi bi-arrow-down colorindex"></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
                                         <li><a class="dropdown-item py-2" href="compliance.html">Compliance</a></li>
                                         <li><a class="dropdown-item py-2" href="ESG.html">ESG</a></li>
                                         <li><a class="dropdown-item py-2" href="lgpd.html">LGPD</a></li>
@@ -280,20 +281,21 @@
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item py-2" href="estatutosocial.html">Estatuto</a></li>
-                                <li class="nav-item dropdown">
-                                <li class="dropdown-item d-flex justify-content-between align-items-center py-2">
-                                    Convênios e contratos <i class="bi bi-arrow-down colorindex"></i>
-                                </li>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
-                                            Contratos de Gestão</a>
-                                    </li>
-                                    <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
-                                            Contas</a>
-                                    </li>
-                                </ul>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center py-2">
+                                        Convênios e contratos
+                                        <i class="bi bi-arrow-down colorindex"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item py-2" href="convenios_&_contratos.html">Convênios e
+                                                Contratos de
+                                                Gestão</a></li>
+                                        <li><a class="dropdown-item py-2" href="login_prestcontas.html">Prestação de
+                                                Contas</a></li>
+                                    </ul>
                                 </li>
                             </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="carreira.html">Carreira</a></li>
                             <li class="nav-item"><a class="nav-link" href="imprensa.html">Imprensa</a></li>
                             <li class="nav-item">
@@ -479,14 +481,13 @@
             }
         });
         // Script para expandir o submenu ao clicar
-        document.addEventListener('DOMContentLoaded', function () {
-            const submenus = document.querySelectorAll('.dropdown-submenu > a');
-            submenus.forEach(submenu => {
-                submenu.addEventListener('click', function (e) {
-                    e.preventDefault(); // Evita o comportamento padrão
-                    const submenuList = submenu.nextElementSibling;
-                    submenuList.classList.toggle('show');
-                });
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (submenuLink) {
+            submenuLink.addEventListener('click', function (e) {
+                var nextElement = submenuLink.nextElementSibling;
+                if (nextElement.classList.contains('dropdown-menu')) {
+                    nextElement.classList.toggle('show');
+                    e.preventDefault(); // Prevents closing the parent dropdown
+                }
             });
         });
     </script>
