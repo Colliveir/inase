@@ -7,11 +7,16 @@
 
 /* HEADER - MENU */
 header {
-    background-color: #F2F2F2;
+    background-color: #FFF;
+    border-bottom: 1px solid #a9a9a9;
     display: block;
     text-align: center !important;
     padding: 0px;
     width: 100%;
+}
+
+.navbar-toggler{
+    border: none !important;
 }
 
 .btnpre:hover {
@@ -257,7 +262,8 @@ ol {
 
 /* FOOTER */
 footer {
-    background-color: #F2F2F2;
+    background-color: #FFF;
+    border-top: 1px solid #a9a9a9;
 }
 
 footer a {
