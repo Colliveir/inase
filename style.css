@@ -512,11 +512,20 @@ footer a {
 
     /* PDF */
 
-    .pdf img{
+    .pdf img {
         width: 40%;
     }
 
     /* END PDF */
+
+    /* TABLE  */
+
+    .table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    /* END TABLE */
 
     /* END INDEX.HTML (PÁGINA INICIAL) */
 
