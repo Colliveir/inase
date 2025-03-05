@@ -308,6 +308,7 @@ footer a {
 
 #titlesec3 {
     color: #FF4704;
+    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.1em;
     font-family: "Poppins", serif !important;
     font-style: normal;
     font-size: 50px;
@@ -316,6 +317,7 @@ footer a {
 
 #titlesec4 {
     color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: "Poppins", serif !important;
     font-style: normal;
     font-size: 50px;
