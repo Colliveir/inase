@@ -314,6 +314,14 @@ footer a {
     margin-left: 10%;
 }
 
+#titlesec4 {
+    color: #fff;
+    font-family: "Poppins", serif !important;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 10%;
+}
+
 .pagIni_sec4 {
     background-image: url(images/carretas_bg.png);
     background-repeat: no-repeat;
@@ -484,9 +492,28 @@ footer a {
 
     /* END MENU MOBILE */
 
-    footer img {
-        width: 180px;
+    /* FOOTER MOBILE */
+
+    footer .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+    footer .d-flex div {
+        width: 100%;
+    }
+
+    footer .d-flex a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer img {
+        max-width: 200px;
+    }
+
+    /* END FOOTER MOBILE */
 
     /* INDEX.HTML (PÁGINA INICIAL) */
 
@@ -498,12 +525,24 @@ footer a {
         display: block !important;
     }
 
+    #titlesec3 {
+        font-size: 40px;
+    }
+
+    #titlesec4 {
+        font-size: 40px;
+    }
+
     .pagIni_sec3 {
         background-image: url(images/PAGINA_INICIAL_10.png);
     }
 
     .pagIni_sec3 img {
         width: 200px;
+    }
+
+    .pagIni_sec4 {
+        background-image: url(images/carretas_bg_mobile.png);
     }
 
     .pagIni_sec4 img {
