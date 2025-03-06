@@ -592,7 +592,7 @@ footer a {
 
     .custom-carousel-item img {
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
         border-radius: 15px;
         margin: auto;
     }
@@ -650,7 +650,7 @@ footer a {
     }
 
     .container {
-        padding: 10% !important;
+        padding: 8% !important;
     }
 
     /* END GERAL */
