@@ -314,7 +314,6 @@ footer a {
 
 #titlesec3 {
     color: #FF4704;
-    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.1em;
     font-family: "Poppins", serif !important;
     font-style: normal;
     font-size: 50px;
@@ -583,5 +582,16 @@ footer a {
     }
 
     /* END IGV.HTML (VIDAS) */
+
+    /* GERAL */
+    .navbar-brand{
+        margin: 0 !important;
+    }
+
+    .container{
+        padding: 5% !important;
+    }
+
+    /* END GERAL */
 
 }
