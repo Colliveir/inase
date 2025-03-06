@@ -8,7 +8,7 @@
 /* HEADER - MENU */
 header {
     background-color: #FFF;
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid #dedede;
     display: block;
     text-align: center !important;
     padding: 0px;
@@ -263,7 +263,7 @@ ol {
 /* FOOTER */
 footer {
     background-color: #FFF;
-    border-top: 1px solid #a9a9a9;
+    border-top: 1px solid #dedede;
 }
 
 footer a {
