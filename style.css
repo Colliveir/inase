@@ -15,7 +15,7 @@ header {
     width: 100%;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none !important;
 }
 
@@ -301,6 +301,14 @@ footer a {
     transform: scale(1.05);
 }
 
+.sec3-desktop {
+    display: block;
+}
+
+.sec3-mobile {
+    display: none;
+}
+
 .pagIni_sec3 {
     background-image: url(images/PAGINA_INICIAL_09.png);
     background-repeat: no-repeat;
@@ -320,9 +328,16 @@ footer a {
     margin-left: 10%;
 }
 
+.sec4-desktop {
+    display: block;
+}
+
+.sec4-mobile {
+    display: none;
+}
+
 #titlesec4 {
     color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: "Poppins", serif !important;
     font-style: normal;
     font-size: 50px;
@@ -334,6 +349,7 @@ footer a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .pagIni_sec4 img {
     width: 270px;
@@ -533,27 +549,72 @@ footer a {
     }
 
     #titlesec3 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #titlesec4 {
-        font-size: 40px;
+        font-size: 35px;
+    }
+
+    .sec3-desktop {
+        display: none;
+    }
+
+    .sec3-mobile {
+        display: block;
     }
 
     .pagIni_sec3 {
         background-image: url(images/PAGINA_INICIAL_10.png);
-    }
-
-    .pagIni_sec3 img {
-        width: 200px;
+        min-height: 650px;
     }
 
     .pagIni_sec4 {
         background-image: url(images/carretas_bg_mobile.png);
+        min-height: 650px;
     }
 
-    .pagIni_sec4 img {
-        width: 200px;
+    .sec4-desktop {
+        display: none;
+    }
+
+    .sec4-mobile {
+        display: block;
+    }
+
+    /* slider sec3 e sec4 */
+
+    .custom-carousel {
+        text-align: center;
+        max-width: 320px;
+        margin: 20px auto;
+    }
+
+    .custom-carousel-item img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px;
+        margin: auto;
+    }
+
+    .custom-carousel-btn {
+        background-color: #FF6600;
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -60px;
+        top: auto;
+        opacity: 1;
+        border: none;
+    }
+
+    .custom-carousel-prev {
+        left: 60%;
+    }
+
+    .custom-carousel-next {
+        right: 5%;
     }
 
     /* PDF */
@@ -584,11 +645,11 @@ footer a {
     /* END IGV.HTML (VIDAS) */
 
     /* GERAL */
-    .navbar-brand{
+    .navbar-brand {
         margin: 0 !important;
     }
 
-    .container{
+    .container {
         padding: 5% !important;
     }
 
