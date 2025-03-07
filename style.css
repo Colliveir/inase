@@ -565,6 +565,7 @@ footer a {
     }
 
     .pagIni_sec3 {
+        background-image: none;
         min-height: 650px;
     }
 
@@ -609,7 +610,7 @@ footer a {
     }
 
     .custom-carousel-prev {
-        left: 50%;
+        left: 40%;
     }
 
     .custom-carousel-next {
