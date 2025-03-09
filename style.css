@@ -13,6 +13,9 @@ header {
     text-align: center !important;
     padding: 0px;
     width: 100%;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-toggler {
@@ -120,7 +123,9 @@ ol {
     padding: 0 !important;
     max-height: 600px;
     border-radius: 30px;
+
 }
+
 
 /* login background */
 #bgimg {
@@ -258,16 +263,24 @@ ol {
 
 /* END DIRETÓRIOS */
 
-.roundedplus{
+.roundedplus {
     border-radius: 30px;
+}
+
+.pdf img {
+    border-radius: 10px;
 }
 
 /* END Geral */
 
 /* FOOTER */
 footer {
+    padding: 2% 0;
     background-color: #FFF;
     border-top: 1px solid #dedede;
+    -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.3);
 }
 
 footer a {
@@ -281,6 +294,7 @@ footer a {
 /* END FOOTER */
 
 /* INDEX.HTML (PÁGINA INICIAL) */
+
 #header-pagIni a:hover {
     color: #FF4704;
 }
@@ -303,6 +317,10 @@ footer a {
 
 .pagIni_imghover img:hover {
     transform: scale(1.05);
+}
+
+.years-mobile {
+    display: none;
 }
 
 .sec3-desktop {
@@ -506,7 +524,7 @@ footer a {
 
 /* END ODONTOLOGIA */
 
-@media(max-width: 1300px) {
+@media(max-width: 1200px) {
 
     header {
         margin: 0 !important;
@@ -527,10 +545,17 @@ footer a {
 
     /* FOOTER MOBILE */
 
+    footer {
+        align-items: start !important;
+        text-align: start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     footer .d-flex {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: start !important;
+        text-align: start !important;
     }
 
     footer .d-flex div {
@@ -542,13 +567,29 @@ footer a {
         margin: 5px 0;
     }
 
+    footer .row {
+        text-align: start !important;
+    }
+
+    footer .col {
+        text-align: start !important;
+    }
+
     .logo_footer {
-        width: 150px;
+        display: none;
     }
 
     /* END FOOTER MOBILE */
 
     /* INDEX.HTML (PÁGINA INICIAL) */
+
+    .years-desktop {
+        display: none;
+    }
+
+    .years-mobile {
+        display: block;
+    }
 
     .sliderDesktop {
         display: none !important;
@@ -564,6 +605,7 @@ footer a {
 
     #titlesec4 {
         font-size: 35px;
+        color: #FF4704;
     }
 
     .sec3-desktop {
@@ -580,7 +622,7 @@ footer a {
     }
 
     .pagIni_sec4 {
-        background-image: url(images/carretas_bg_mobile.png);
+        background-image: url(images/PAGINA_INICIAL_09.png);
         min-height: 700px;
     }
 
@@ -620,7 +662,7 @@ footer a {
     }
 
     .custom-carousel-prev {
-        left: 50%;
+        left: 60%;
     }
 
     .custom-carousel-next {
@@ -663,6 +705,20 @@ footer a {
         padding: 2% !important;
     }
 
+    video {
+        border-radius: 15px;
+    }
+
+    .roundedplus {
+        border-radius: 15px;
+    }
+
     /* END GERAL */
 
+    /* LOGIN ALL */
+    .login-box {
+        margin-top: 20px;
+    }
+
+    /* END LOGIN ALL */
 }
